@@ -1,7 +1,6 @@
 ---
 title: Clases y visibilidad entre objetos – POO
 author: Javinator9889
-type: post
 date: 2018-09-16T18:41:09+00:00
 url: /poo-classes-visibility/
 amp_status:

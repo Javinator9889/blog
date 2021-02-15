@@ -1,11 +1,11 @@
 ---
 title: 'Tutorial: Downgrade router HGU Askey y Mitrastar de Movistar ⇒ versión N43'
 author: Javinator9889
-type: post
 date: 2019-09-02T15:30:43+00:00
 excerpt: ¿Alguna vez te has encontrado ante una versión de un firmware que no funciona del todo bien? Pues este es el caso que ha ocurrido con las últimas actualizaciones de los router de Movistar, y aquí vamos a aprender a cómo volver a una versión anterior mediante el proceso de "downgrade".
 url: /movistar-downgrade-router-hgu/
-featured_image: /wp-content/uploads/2019/09/hgu-88x88.jpg
+cover: 
+  image: /wp-content/uploads/2019/09/hgu-88x88.jpg
 itemlist_item_396:
   - 'a:0:{}'
 music_composer_396:

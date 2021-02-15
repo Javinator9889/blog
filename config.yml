@@ -15,12 +15,30 @@ buildExpired: false
 
 minify:
     disableXML: true
-    # minifyOutput: true
+    minifyOutput: true
 
 languages:
+    es:
+        languageName: "Español"
+        weight: 1
+        menu:
+            main:
+                - name: Registro
+                  url: archives
+                  weight: 5
+                - name: Búsqueda
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categorías
+                  url: categories/
+                  weight: 10
+
     en:
         languageName: "English"
-        weight: 1
+        weight: 2
         menu:
             main:
                 - name: Archive
@@ -34,57 +52,6 @@ languages:
                   weight: 10
                 - name: Categories
                   url: categories/
-                  weight: 10
-
-    fr:
-        languageName: ":fr:"
-        weight: 2
-        title: PaperModL2
-        profileMode:
-            enabled: true
-            title: PaperMod
-            # imageUrl: "#"
-            # imageTitle: my image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: Tags
-                  url: tags
-                  weight: 10
-                - name: Categories
-                  url: categories
-                  weight: 10
-                - name: Series
-                  url: series
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-                - name: NullLink2
-                  url: "#"
-                - name: NullLink3
-                  url: "#"
-
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        menu:
-            main:
-                - name: Tags
-                  url: tags
                   weight: 10
 
 outputs:

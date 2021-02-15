@@ -1,11 +1,11 @@
 ---
 title: DDNS for GoDaddy – HOWTO – pyGoDaddyUpdater
 author: Javinator9889
-type: post
 date: 2019-03-27T22:21:24+00:00
 excerpt: Use pyGoDaddyUpdater for synchronizing your server public IP with your GoDaddy account and do not miss any visitor on your website!
 url: /ddns-for-godaddy-howto/
-featured_image: /wp-content/uploads/2019/03/thumbnail.png
+cover:
+  image: /wp-content/uploads/2019/03/thumbnail.png
 categories:
   - Python
   - Tutoriales
@@ -18,7 +18,7 @@ tags:
   - tutorial
 
 ---
-Maybe you are a _GoDaddy_ user, maybe you have heard about it. Nowadays, _GoDaddy_ has become in one of the **most important companies** which helps webmasters and developers _organize _and _host_ their websites easily and economically.
+Maybe you are a _GoDaddy_ user, maybe you have heard about it. Nowadays, *GoDaddy* has become in one of the **most important companies** which helps webmasters and developers _organize_ and _host_ their websites easily and economically.
 
 But what you have maybe noticed is that there is no **DDNS** for updating the &#8216;_A&#8217; Record_ IP. If you do not know **what an &#8216;A&#8217; record** is, basically it works like a routing way for finding the IP associated with a server. For example, suppose that you have bought the domain: _example.com_ but your server is running behind a **dynamic public IP** so after some time it changes. If you want people to access your website through that domain, you will have to make that domain point to your _actually public IP_, having this value updated whenever it changes.
 

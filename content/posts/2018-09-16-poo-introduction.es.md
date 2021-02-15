@@ -1,7 +1,6 @@
 ---
 title: Introducción a la Programación Orientada a Objetos – POO
 author: Javinator9889
-type: post
 date: 2018-09-16T18:40:07+00:00
 url: /poo-introduction/
 categories:

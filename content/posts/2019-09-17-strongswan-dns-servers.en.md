@@ -1,11 +1,11 @@
 ---
 title: '[SOLVED] – StrongSwan VPN not updating DNS servers [Ubuntu / Debian / systemd distros]'
 author: Javinator9889
-type: post
 date: 2019-09-17T10:02:32+00:00
 excerpt: 'Do you have a IKEv2 VPN but it is not working correctly on your Linux machine? Learn how to make StrongSwan updating DNS servers on Ubuntu & more'
 url: /strongswan-dns-servers/
-featured_image: /wp-content/uploads/2019/09/strongswan-88x88.png
+cover:
+  image: /wp-content/uploads/2019/09/strongswan-88x88.png
 categories:
   - Tutoriales
 tags:

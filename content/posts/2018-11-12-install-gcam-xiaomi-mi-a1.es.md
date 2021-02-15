@@ -1,10 +1,12 @@
 ---
 title: 'Instalar GCam (Google Camera) sin perder datos (no root) – Xiaomi Mi A1 & Mi A2 Lite'
 author: Javinator9889
-type: post
 date: 2018-11-12T18:16:55+00:00
+draft: false
 url: /install-gcam-xiaomi-mi-a1/
-featured_image: /wp-content/uploads/2018/11/thumbnail-1.png
+cover:
+  image: /wp-content/uploads/2018/11/thumbnail-1.png
+  hidden: false
 categories:
   - Google Camera
   - Tutoriales

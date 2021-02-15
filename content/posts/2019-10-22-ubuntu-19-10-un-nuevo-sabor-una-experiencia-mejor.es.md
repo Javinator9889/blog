@@ -1,10 +1,10 @@
 ---
 title: Ubuntu 19.10 – un nuevo sabor, una experiencia mejor
 author: Javinator9889
-type: post
 date: 2019-10-22T09:14:34+00:00
 url: /ubuntu-19-10-un-nuevo-sabor-una-experiencia-mejor/
-featured_image: /wp-content/uploads/2019/10/Ermine_lines_by_Gustavo_Brenner-88x88.png
+cover:
+  image: /wp-content/uploads/2019/10/Ermine_lines_by_Gustavo_Brenner-88x88.png
 categories:
   - Reviews
 tags:
