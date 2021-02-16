@@ -14,6 +14,7 @@ tags:
   - tutorial
   - ubuntu
   - vpn
+ShowToc: false
 
 ---
 Hi everyone.

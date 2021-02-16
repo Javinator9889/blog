@@ -5,7 +5,7 @@ date: 2019-03-27T22:21:24+00:00
 excerpt: Use pyGoDaddyUpdater for synchronizing your server public IP with your GoDaddy account and do not miss any visitor on your website!
 url: /ddns-for-godaddy-howto/
 cover:
-  image: /wp-content/uploads/2019/03/thumbnail.png
+  image: images/thumbnail.png
 categories:
   - Python
   - Tutoriales
@@ -16,6 +16,8 @@ tags:
   - godaddy
   - python
   - tutorial
+ShowToc: false
+
 
 ---
 Maybe you are a _GoDaddy_ user, maybe you have heard about it. Nowadays, *GoDaddy* has become in one of the **most important companies** which helps webmasters and developers _organize_ and _host_ their websites easily and economically.
@@ -26,7 +28,7 @@ As you may have notices, this is a &#8220;hard&#8221; work as you must be lookin
 
 <!--more-->
 
-[<img loading="lazy" class="size-full aligncenter" src="https://s21.q4cdn.com/444693267/files/doc_downloads/Assets/GoDaddy_Logo_RGB_Full_B.png" width="800" height="223" />][2]
+![godaddy](images/GoDaddy_Logo_RGB_Full_B.png)
 
 [pyGoDaddyUpdater][1] is a **Python application** that will allow you to setup a custom _GoDaddy_ DDNS service, running in the background. It has several possibilities:
 
@@ -43,25 +45,32 @@ In order to start using it, you have to:
   1. Go to <https://developer.godaddy.com/getstarted> and generate a new _key pair_ that you will use as a **developer account**. The _key_ and _secret_ you will need are available [at this link][3]. The environment you will need to create and use is the **Production** one.
   2. Keep safe both _key_ and _secret_ as we will use them in the next execution.
   3. Install **Python 3** and **pip** on your system, as we will use them for running the service.
-  4. Install [pyGoDaddyUpdater][1] using _setup.py_ or _pip:  
-_ </p> <pre class="brush: bash; title: ; notranslate" title="">sudo pip3 install pyGoDaddyUpdater</pre>
+  4. Install [pyGoDaddyUpdater][1] using _setup.py_ or _pip_:  
+  ```bash
+  sudo pip3 install pyGoDaddyUpdater
+  ```
     
-    For _setup.py_ instructions, please refer to the [official GitHub repository.][4]</li> 
+For _setup.py_ instructions, please refer to the [official GitHub repository.][4]
+
+  * Get prepared for the first execution. You will need: _domain name_, _&#8216;A&#8217; record name_, _developer key_ and _secret key_. Then, run the program as follows: 
+  ```bash
+  [sudo] godaddy_ddns --domain example.com --name @ --key YOUR_KEY --secret YOUR_SECRET
+  ```
     
-      * Get prepared for the first execution. You will need: _domain name_, _&#8216;A&#8217; record name_, _developer key _and _secret key_. Then, run the program as follows: <pre class="brush: bash; title: ; notranslate" title="">[sudo] godaddy_ddns --domain example.com --name @ --key YOUR_KEY --secret YOUR_SECRET</pre>
-        
-        The _sudo_ value is in brackets because it depends on your configuration, as you may need or not it. In addition, there are several options you can define for a better experience, as the **update interval time** or the **user **(and **group**) that will be executing the command. Please refer to the [official GitHub repository][5] for more information.</li> 
-        
-          * After running the program, you can check the _logs_ and the _pid_ at the following locations, if you did not change it: 
-            <pre>/var/log/pygodaddy.log</pre>
-            
-            <pre>/var/run/pygodaddy.pid</pre>
-        
-          * The next time you run the script, you will need **no arguments** as the program stores _your preferences_ for you.</ol> 
-        
-        **And that&#8217;s it!** Now you have set up a _Dynamic DNS_ service that will be running in background until you restart your computer. You can also define an **init.d **script that will be run on boot. You can have a look at an [automatic tool I developed][6] which will allow you to _create on boot scripts _interactively. In addition, here you have the [project link][1] in which you can find more information about how **pyGoDaddy** works and _extra useful options_.
-        
-        Do not forget to share if you liked it! 😉
+  The _sudo_ value is in brackets because it depends on your configuration, as you may need or not it. In addition, there are several options you can define for a better experience, as the **update interval time** or the **user** (and **group**) that will be executing the command. Please refer to the [official GitHub repository][5] for more information.
+  
+  * After running the program, you can check the _logs_ and the _pid_ at the following locations, if you did not change it: 
+    ```shell
+    /var/log/pygodaddy.log
+    
+    /var/run/pygodaddy.pid
+    ```
+
+  * The next time you run the script, you will need **no arguments** as the program stores _your preferences_ for you.
+  
+  **And that&#8217;s it!** Now you have set up a _Dynamic DNS_ service that will be running in background until you restart your computer. You can also define an **init.d** script that will be run on boot. You can have a look at an [automatic tool I developed][6] which will allow you to _create on boot scripts_ interactively. In addition, here you have the [project link][1] in which you can find more information about how **pyGoDaddy** works and _extra useful options_.
+  
+  Do not forget to share if you liked it! 😉
 
  [1]: https://github.com/ddns-clients/pyGoDaddyAUpdater
  [2]: https://s21.q4cdn.com/444693267/files/doc_downloads/Assets/GoDaddy_Logo_RGB_Full_B.png
