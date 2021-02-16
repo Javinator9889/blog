@@ -2,9 +2,10 @@
 title: Bienvenido al blog
 author: Javinator9889
 date: 2018-09-12T15:21:27+00:00
-url: /welcome/
 categories:
   - Welcome
+url: /es/welcome
+ShowToc: false
 
 ---
 Hola 😃
@@ -15,7 +16,7 @@ Te invito a que navegues por él, y si tienes _alguna idea interesante_ proponl
 
 Un saludo,
 
-<img loading="lazy" class="alignnone size-full wp-image-70" src="https://javinator9889.sytes.net/blog/wp-content/uploads/2018/09/sign.png" alt="" width="200" height="85" /> 
+![sign](/welcome/images/sign.png)
 
 <!--more-->
 
