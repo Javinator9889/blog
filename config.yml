@@ -77,6 +77,9 @@ params:
     ShowToc: true
     # comments: false
     images: ["papermod-cover.png"]
+    cover:
+      responsiveImages: true
+      linkFullImages: true
 
     profileMode:
         enabled: false
