@@ -4,7 +4,7 @@ author: Javinator9889
 date: 2019-11-21T13:29:27+00:00
 url: /instalar-android-10-mi-a1/
 cover: 
-  image: /wp-content/uploads/2019/11/Android-10-Easter-Egg-88x88.jpg
+  image: images/Android-10-Easter-Egg.jpg
 categories:
   - Tutoriales
   - Xiaomi Mi A1
@@ -17,38 +17,53 @@ tags:
 ---
 La nueva versión del sistema operativo de Google, [Android 10][1], trae muchas **novedades** y **ventajas** frente a la anterior, Android Pie. Entre ellas, están una mejora en _la privacidad_, una _mejor gestión_ de los permisos, el _modo oscuro_ y una _mejora en rendimiento_.
 
-Si bien hay rumores sobre si Xiaomi actualizará el Mi A1 _(tissot_) a Android 10, hoy vamos a ver **cómo poder instalarlo** nosotros manualmente con un poco de paciencia y pericia.
+Si bien hay rumores sobre si Xiaomi actualizará el Mi A1 (_tissot_) a Android 10, hoy vamos a ver **cómo poder instalarlo** nosotros manualmente con un poco de paciencia y pericia.
 
-Ya que, oficialmente, no hay **ninguna versión del sistema** para el terminal, vamos a instalar lo que se conoce como _GSI_: _Generic System Image_. Básicamente, es una **imagen genérica del sistema** la cual solo necesita del _kernel_ y del _vendor_ para funcionar. Por suerte, la comunidad del Mi A1 es muy activa, y existen _kernel_ muy actualizados (como [_**DPA**_][2]) así como _vendor_ funcionales. De este modo, podemos tener el sistema actualizado siempre a la última versión sin necesidad de que algún desarrollador o la propia Xiaomi se dedique a hacer una versión del sistema operativo **específica para el móvil**. Además, en este caso, las últimas versiones _GSI_ ofrecen un rendimiento **similar o mejor** frente a una _ROM_ dedicada.
+Ya que, oficialmente, no hay **ninguna versión del sistema** para el terminal, vamos a instalar lo que se conoce como _GSI_: _Generic System Image_. Básicamente, es una **imagen genérica del sistema** la cual solo necesita del _kernel_ y del _vendor_ para funcionar. Por suerte, la comunidad del Mi A1 es muy activa, y existen _kernel_ muy actualizados (como **[DPA][2]**) así como _vendor_ funcionales. De este modo, podemos tener el sistema actualizado siempre a la última versión sin necesidad de que algún desarrollador o la propia Xiaomi se dedique a hacer una versión del sistema operativo **específica para el móvil**. Además, en este caso, las últimas versiones _GSI_ ofrecen un rendimiento **similar o mejor** frente a una _ROM_ dedicada.
 
 <!--more-->
 
 # _Disclaimer_
 
-<p style="text-align: center;">
-  <code>Este tutorial se ha hecho con fines educativos y no busca en ningún momento criticar ninguna marca y/o empresa. </code>
-</p>
+```
+  Este tutorial se ha hecho con fines educativos y no busca en ningún
+  momento criticar ninguna marca y/o empresa.
 
-<p style="text-align: center;">
-  <code>Así mismo, cada uno es responsable del trato que haga con su dispositivo, no haciéndome ni yo ni, cualquiera relacionado con los grupos de &lt;a href="https://goo.gl/VpLnw7">Xiaomi Mi A1 - CASTELLANO&lt;/a> o &lt;a href="https://goo.gl/PaAsyQ">Xiaomi Mi A1 Development&lt;/a>, o desarrollador(es) de las distintas aplicaciones y/o métodos para conseguir niveles privilegiados de acceso al dispositivo y otros equipos, ni ninguna persona física implicada directa o indirectamente en los procesos aquí descritos, responsables de cualquier daño, perjurio, pérdida de garantía, avería, percance o mal que le pueda ocurrir al dispositivo durante la realización de los pasos descritos en este tutorial, los cuales se han comprobado que funcionan en las últimas actualizaciones recibidas por el terminal. En caso de que la última actualización no haya sido comprobada todavía, es recomendable esperarse para tener ciertas garantías de éxito. </code>
-</p>
+  Así mismo, cada uno es responsable del trato que haga con su dispositivo, 
+  no haciéndome ni yo ni, cualquiera relacionado con los grupos de
+  [Xiaomi Mi A1 - CASTELLANO](https://goo.gl/VpLnw7) o 
+  [Xiaomi Mi A1 Development](https://goo.gl/PaAsyQ), o desarrollador(es) 
+  de las distintas aplicaciones y/o métodos para conseguir niveles privilegiados
+  de acceso al dispositivo y otros equipos, ni ninguna persona física implicada 
+  directa o indirectamente en los procesos aquí descritos, responsables de 
+  cualquier daño, perjurio, pérdida de garantía, avería, percance o mal 
+  que le pueda ocurrir al dispositivo durante la realización de los pasos 
+  descritos en este tutorial, los cuales se han comprobado que funcionan 
+  en las últimas actualizaciones recibidas por el terminal. En caso de 
+  que la última actualización no haya sido comprobada todavía, es recomendable 
+  esperarse para tener ciertas garantías de éxito.
 
-<p style="text-align: center;">
-  <code>Así mismo, este &lt;em>post&lt;/em> se ha hecho de buena fe, buscando ayudar a la comunidad, y es posible que la información no sea todo lo concisa que un determinado usuario necesite o que dicha información no consiga solucionar o alcanzar el fin para la cual fue redactada. En este caso, el susodicho usuario es libre de acceder a diversos foros y grupos para pedir ayuda, no siendo necesario prestársela.</code>
-</p>
+  Así mismo, este post se ha hecho de buena fe, buscando ayudar a la comunidad, 
+  y es posible que la información no sea todo lo concisa que un determinado 
+  usuario necesite o que dicha información no consiga solucionar o alcanzar el 
+  fin para la cual fue redactada. En este caso, el susodicho usuario es libre de 
+  acceder a diversos foros y grupos para pedir ayuda, 
+  no siendo necesario prestársela.
 
-<p style="text-align: center;">
-  <code>Recomendamos encarecidamente, en cualquier caso e independientemente del nivel de cada lector de este &lt;em>post&lt;/em>, realizar una lectura intensiva y comprensiva del contenido de éste, para evitar los posibles daños mencionados anteriormente causados por la falta de un entendimiento conciso del mismo.</code>
-</p>
+  Recomendamos encarecidamente, en cualquier caso e independientemente del nivel 
+  de cada lector de este post, realizar una lectura intensiva y comprensiva del 
+  contenido de éste, para evitar los posibles daños mencionados anteriormente 
+  causados por la falta de un entendimiento conciso del mismo.
+```
 
-# Índice
+<!-- # Índice
 
   1. **[Instalando un _custom recovery._][3]**
   2. **[Re-particionando el dispositivo _(Treble)._][4]**
   3. **[Formateando las particiones.][5]**
   4. **[Instalando la imagen _boot_, _vendor_ y _system_.][6]**
   5. [**Pasos finales en la instalación.**][7]
-  6. [**Sección de ayuda (faq, actualizaciones, etc)**][8]
+  6. [**Sección de ayuda (faq, actualizaciones, etc)**][8] -->
 
 ## 1. Instalando un _custom recovery_ {#custom_recovery}
 
@@ -56,59 +71,43 @@ Ya que necesitamos cambiar el sistema operativo, vamos a tener que instalar un _
 
 En este caso, vamos a usar el [TWRP de Giovix92][9] &#8211; también es posible usar el de [CosmicDan][10], pero hace tiempo que no se actualiza y Giovix cogió el relevo del proyecto. La instalación es muy sencilla:
 
-  * Vamos al siguiente enlace: <https://s.javinator9889.com/giovix_twrp> y descargamos el zip con el _boot_ y el instalador.  
-    [<img loading="lazy" class="aligncenter size-full wp-image-541" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Captura-de-pantalla-de-2019-11-21-12-32-50.png" alt="" width="791" height="80" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Captura-de-pantalla-de-2019-11-21-12-32-50.png 791w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Captura-de-pantalla-de-2019-11-21-12-32-50-300x30.png 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Captura-de-pantalla-de-2019-11-21-12-32-50-768x78.png 768w" sizes="(max-width: 791px) 100vw, 791px" />][11]
+  * Vamos al siguiente enlace: <https://s.javinator9889.com/giovix_twrp> y descargamos el zip con el _boot_ y el instalador.
+  {{< lazyimage src="images/twrp.png" >}}
   * Descomprimimos el **archivo _boot_** &#8211; vamos a usar de ahora en adelante la carpeta &#8220;Mi A1&#8221; para este proyecto.
-
-* * *
 
 A continuación, tendremos que **desbloquear el _bootloader_** &#8211; aquí no se va a explicar, ya que se muestra en el tutorial de la Google Camera: <https://blog.javinator9889.com/install-gcam-xiaomi-mi-a1/#bootloader_unlock>. Seguid los pasos ahí explicados y no tendréis problemas.
 
 * * *
 
-En este momento, necesitamos tener a mano **un** **ordenador** y un **cable USB Tipo-C**, ya que vamos a necesitar ejecutar comandos. Iniciamos el dispositivo en modo _fastboot,_ manteniendo pulsado el botón de **encendido (_E_)** junto con **bajar volumen (_Vol-_)** y entraremos en modo _fastboot_.
+En este momento, necesitamos tener a mano **un ordenador** y un **cable USB Tipo-C**, ya que vamos a necesitar ejecutar comandos. Iniciamos el dispositivo en modo _fastboot,_ manteniendo pulsado el botón de **encendido (_E_)** junto con **bajar volumen (_Vol-_)** y entraremos en modo _fastboot_.
 
-<div id="attachment_245" style="width: 639px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot.jpg"><img aria-describedby="caption-attachment-245" loading="lazy" class="size-large wp-image-245" src="https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot-1024x576.jpg" alt="" width="629" height="354" srcset="https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot-1024x576.jpg 1024w, https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot-300x169.jpg 300w, https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot-768x432.jpg 768w, https://blog.javinator9889.com/wp-content/uploads/2018/11/fastboot.jpg 1920w" sizes="(max-width: 629px) 100vw, 629px" /></a>
-  
-  <p id="caption-attachment-245" class="wp-caption-text">
-    Imagen que aparece al reiniciar correctamente en modo <em>fastboot</em> en el Xiaomi Mi A1
-  </p>
-</div>
+{{< lazyimage src="images/fastboot.jpg" caption="Imagen que aparece al reiniciar correctamente en modo **fastboot** en el Xiaomi Mi A1" >}}
 
 Si has seguido los pasos anteriores, tendrás las herramientas de _fastboot_ guardadas en la carpeta _**adb.**_ En este caso, **mueves los archivos** descargados anteriormente a dicha carpeta, y abres una _consola de comandos._
 
-<div id="attachment_248" style="width: 639px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we.png"><img aria-describedby="caption-attachment-248" loading="lazy" class="size-large wp-image-248" src="https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we-1024x695.png" alt="" width="629" height="427" srcset="https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we-1024x695.png 1024w, https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we-300x204.png 300w, https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we-768x521.png 768w, https://blog.javinator9889.com/wp-content/uploads/2018/11/cmd_we.png 1179w" sizes="(max-width: 629px) 100vw, 629px" /></a>
-  
-  <p id="caption-attachment-248" class="wp-caption-text">
-    Ejecutando CMD en la carpeta actual desde Windows Explorer
-  </p>
-</div>
+{{< lazyimage src="images/cmd_we.png" caption="Ejecutando CMD en la carpeta actual desde Windows Explorer" >}}
 
 A continuación, ejecutamos los siguientes comandos:
 
-<pre class="brush: bash; title: ; notranslate" title="">fastboot devices
-</pre>
+```shell
+fastboot devices
+```
 
 Comprobamos que aparece nuestro dispositivo
 
-<pre class="brush: bash; title: ; notranslate" title="">fastboot boot boot-recovery.img
-</pre>
+```shell
+fastboot boot boot-recovery.img
+```
 
 E iniciamos el sistema con la imagen del _recovery_.
 
 Una vez dentro, vamos al apartado &#8220;_Install_&#8221; y seleccionamos el **archivo zip** que hemos descargado anteriormente &#8211; el archivo se puede enviar por MTP, conectando el terminal al ordenador, o bien guardándolo en la tarjeta SD.
 
-[<img loading="lazy" class="aligncenter size-large" src="data:image/png;base64,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" alt="Vista principal de TWRP" width="168" height="300" />][12]Una vez se haya completado el proceso, vamos al menú &#8220;_Reboot_&#8221; y seleccionamos la opción &#8220;_Recovery&#8221;_. Si todo ha ido bien, debería iniciarse en el _recovery_ directamente, sin necesidad ya de ejecutar comandos.
+{{< lazyimage src="images/twrp-screen.png" caption="Vista principal de TWRP" >}}
 
-<div id="attachment_544" style="width: 179px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26.png"><img aria-describedby="caption-attachment-544" loading="lazy" class="wp-image-544 size-medium" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-169x300.png" alt="" width="169" height="300" /></a>
-  
-  <p id="caption-attachment-544" class="wp-caption-text">
-    Menú de reinicio en TWRP
-  </p>
-</div>
+Una vez se haya completado el proceso, vamos al menú &#8220;_Reboot_&#8221; y seleccionamos la opción &#8220;_Recovery&#8221;_. Si todo ha ido bien, debería iniciarse en el _recovery_ directamente, sin necesidad ya de ejecutar comandos.
+
+{{< lazyimage src="images/rebootold.png" caption="Menú de reinicio en TWRP" width=300 >}}
 
 ## 2. Re-particionando el dispositivo _(Treble)_ {#treble}
 
@@ -124,13 +123,7 @@ Usando el TWRP de Giovix, el procedimiento es muy sencillo:
   * Pulsamos en la opción que dice &#8220;_Treble&#8221;_ y, una vez aceptado, el proceso comenzará.
   * **Reiniciamos** de nuevo en _recovery_, esta vez con el terminal ya _trebleizado_.
 
-<div id="attachment_545" style="width: 179px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29.png"><img aria-describedby="caption-attachment-545" loading="lazy" class="size-medium wp-image-545" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-169x300.png" alt="" width="169" height="300" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-169x300.png 169w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-576x1024.png 576w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-768x1365.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-864x1536.png 864w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29-900x1600.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-29.png 1080w" sizes="(max-width: 169px) 100vw, 169px" /></a>
-  
-  <p id="caption-attachment-545" class="wp-caption-text">
-    Menú Treble en el TWRP
-  </p>
-</div>
+{{< lazyimage src="images/treble-menu.png" caption="Menú Treble en TWRP" width=300 >}}
 
 Tenéis más información sobre el proceso de _Treble_ en el siguiente enlace: [\[GUIDE\] \[Q&A\] [TREBLE] From Stock to Treble &#8211; everything you need to know!][13]
 
@@ -138,7 +131,7 @@ Tenéis más información sobre el proceso de _Treble_ en el siguiente enlace: [
 
 Ahora que hemos hecho _Treble_ en el Mi A1, necesitamos _formatear_ las particiones del terminal para poder instalar la _**custom ROM**._ 
 
-## <span style="color: #ff0000;">ATENCIÓN: LOS PASOS QUE SE DESCRIBEN A CONTINUACIÓN SON CRÍTICOS Y PUEDEN DEJAR EL DISPOSITIVO INUTILIZABLE &#8211; HACER COPIA DE SEGURIDAD</span>
+**ATENCIÓN: LOS PASOS QUE SE DESCRIBEN A CONTINUACIÓN SON CRÍTICOS Y PUEDEN DEJAR EL DISPOSITIVO INUTILIZABLE &#8211; HACER COPIA DE SEGURIDAD**
 
 Necesitamos, por cada _slot_ del dispositivo, formatear las siguientes particiones:
 
@@ -148,28 +141,17 @@ Necesitamos, por cada _slot_ del dispositivo, formatear las siguientes particion
   * _data_
   * _internal storage_
 
-<div id="attachment_546" style="width: 179px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41.png"><img aria-describedby="caption-attachment-546" loading="lazy" class="wp-image-546 size-medium" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-169x300.png" alt="" width="169" height="300" /></a>
-  
-  <p id="caption-attachment-546" class="wp-caption-text">
-    Particiones a formatear
-  </p>
-</div>
+{{< lazyimage src="images/format-partitions.png" caption="Particiones a formatear" width=300 >}}
 
 Una vez hechos los _wipes_, tenemos que cambiar el _slot_ activo. Para ello, nos dirigimos al menú &#8220;_Reboot_&#8221; y anotamos en el _slot_ en que estamos:
 
-<div id="attachment_544" style="width: 310px" class="wp-caption aligncenter">
-  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26.png"><img aria-describedby="caption-attachment-544" loading="lazy" class="wp-image-544 size-medium" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-300x121.png" alt="" width="300" height="121" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-300x121.png 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-768x310.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-900x363.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792.png 1022w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-  
-  <p id="caption-attachment-544" class="wp-caption-text">
-    <em>Slots</em> en TWRP
-  </p>
-</div>
+{{< lazyimage src="images/slots.png" caption="*Slots* en TWRP" >}}
 
 de manera que cambiamos al _slot_ inactivo, en este caso, _**slot B.**_ Le damos a &#8220;_Recovery&#8221;_ y se debería iniciar en _recovery._ Antes de hacer ningún _wipe_, comprobamos que en efecto el _slot_ activo es el **B**, ya que en otro caso el sistema no funcionará. Si no se ha cambiado el _slot,_ reiniciamos en el _bootloader_ y ejecutamos el siguiente comando desde el ordenador:
 
-<pre class="brush: bash; title: ; notranslate" title="">fastboot --set-active=b  # se cambia b por el slot en cuestión
-</pre>
+```shell
+fastboot --set-active=b  # se cambia b por el slot en cuestión
+```
 
 y reiniciamos en _recovery_ de nuevo (_**Botón de encendido + Vol. +**_).
 
@@ -192,27 +174,11 @@ Una vez descargada la _ROM_, si está en formato _**img.xz**_, hay que descompri
 Movemos todos los archivos al dispositivo (recomendable la tarjeta SD) y procedemos a instalarlos en el siguiente orden:
 
   * Instalamos _boot_ como imagen _boot_ en el sistema (hay que seleccionar la opción &#8220;_Install image_&#8220;) 
-    <div id="attachment_550" style="width: 179px" class="wp-caption aligncenter">
-      <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05.png"><img aria-describedby="caption-attachment-550" loading="lazy" class="size-medium wp-image-550" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-169x300.png" alt="" width="169" height="300" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-169x300.png 169w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-576x1024.png 576w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-768x1365.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-864x1536.png 864w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-900x1600.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05.png 1080w" sizes="(max-width: 169px) 100vw, 169px" /></a>
-      
-      <p id="caption-attachment-550" class="wp-caption-text">
-        Instalando boot como partición boot
-      </p>
-    </div>
-    
-    &nbsp;</li> 
+    {{< lazyimage src="images/flash-boot.png" caption="Instalando el kernel como partición `boot`" width=300 >}}
     
       * A continuación, instalamos el **zip** con el _vendor_ (volvemos a seleccionar la opción _&#8220;Install_ _zip_&#8220;).
       * Finalmente, instalamos **la imagen del sistema** (seleccionando la opción &#8220;_Install image_&#8220;). 
-        <div id="attachment_551" style="width: 179px" class="wp-caption aligncenter">
-          <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11.png"><img aria-describedby="caption-attachment-551" loading="lazy" class="size-medium wp-image-551" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-169x300.png" alt="" width="169" height="300" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-169x300.png 169w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-576x1024.png 576w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-768x1365.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-864x1536.png 864w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-900x1600.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11.png 1080w" sizes="(max-width: 169px) 100vw, 169px" /></a>
-          
-          <p id="caption-attachment-551" class="wp-caption-text">
-            Instalando la imagen del sistema
-          </p>
-        </div>
-        
-        &nbsp;</li> 
+        {{< lazyimage src="images/install-system.png" caption="Instalación de la imagen del sistema en la partición `system`" width=300 >}}
         
           * No tiene por qué ser necesario, pero **por seguridad** instalamos de nuevo el _TWRP Recovery_ (opción &#8220;_Install zip_&#8220;).
           * Reiniciamos en _recovery_ de nuevo.</ul> 
