@@ -113,7 +113,7 @@ Una vez se haya completado el proceso, vamos al menú &#8220;_Reboot_&#8221; y s
 
 Las _ROMs GSI_ necesitan que el dispositivo esté particionado siguiendo la configuración _Treble_, esto es, disponer de una partición _vendor_ así como _dual-boot_ AB. El Mi A1 ya tiene por defecto la configuración de _dual-boot_, por lo que únicamente queda generar la partición _vendor_.
 
-## <span style="color: #ff0000;">ATENCIÓN: ESTO ELIMINARÁ TODOS LOS DATOS DEL ALMACENAMIENTO INTERNO &#8211; APPS, MULTIMEDIA, ETC.</span>
+> **ATENCIÓN: ESTO ELIMINARÁ TODOS LOS DATOS DEL ALMACENAMIENTO INTERNO &#8211; APPS, MULTIMEDIA, ETC.**
 
 Es importante tener en cuenta que el procedimiento actual **eliminará por completo** todos los datos que hay en nuestro dispositivo, así que es recomendable usar TWRP para hacer un _backup_ del sistema.
 
@@ -131,7 +131,7 @@ Tenéis más información sobre el proceso de _Treble_ en el siguiente enlace: [
 
 Ahora que hemos hecho _Treble_ en el Mi A1, necesitamos _formatear_ las particiones del terminal para poder instalar la _**custom ROM**._ 
 
-**ATENCIÓN: LOS PASOS QUE SE DESCRIBEN A CONTINUACIÓN SON CRÍTICOS Y PUEDEN DEJAR EL DISPOSITIVO INUTILIZABLE &#8211; HACER COPIA DE SEGURIDAD**
+> **ATENCIÓN: LOS PASOS QUE SE DESCRIBEN A CONTINUACIÓN SON CRÍTICOS Y PUEDEN DEJAR EL DISPOSITIVO INUTILIZABLE &#8211; HACER COPIA DE SEGURIDAD**
 
 Necesitamos, por cada _slot_ del dispositivo, formatear las siguientes particiones:
 
@@ -161,15 +161,15 @@ Una vez hayamos completado los formateos, procedemos al siguiente paso.
 
 Ahora quedan los pasos **más importantes**: la instalación de las diferentes partes del sistema.
 
-Por una parte, hace falta instalar _boot_ (el _kernel_). En el siguiente enlace, podéis descargar los _boot_ para diferentes tipos de _kernel_: <https://filedn.com/lqX2hBLpAUN5Or5i8ASdX7p/content/treble/boot.html>.
+Por una parte, hace falta instalar _boot_ (el _kernel_). En el siguiente enlace, podéis descargar los _boot_ para diferentes tipos de _kernel_: <https://www.elranchodecornelio.com/a1index/content/treble/boot.html>.
 
 Del mismo modo, también podéis instalar un _kernel_ personalizado. El que ahora mismo funciona mejor en todo el Mi A1 es el _kernel DPA,_ el cual podéis descargar desde aquí: <https://t.me/dpakernel>. Si queréis obtener una lista completa de las características, el enlace es este: <https://telegra.ph/DPA-Features-11-07>.
 
-El _vendor_ se puede descargar desde el siguiente enlace: <https://filedn.com/lqX2hBLpAUN5Or5i8ASdX7p/content/treble/vendor.html>. Tanto el _vendor_ de Flex como el Sooti muy bien. Además, Chon Doe ha desarrollado su propio _vendor_ con un gran rendimiento, el cual podéis obtener desde aquí: <https://s.javinator9889.com/vendor_chondoe>.
+El _vendor_ se puede descargar desde el siguiente enlace: <https://www.elranchodecornelio.com/a1index/content/treble/vendor.html>. Tanto el _vendor_ de Flex como el Sooti muy bien. Además, Chon Doe ha desarrollado su propio _vendor_ con un gran rendimiento, el cual podéis obtener desde aquí: <https://s.javinator9889.com/vendor_chondoe>.
 
-Finalmente, las _ROMs GSI_ se pueden descargar desde este enlace: <https://filedn.com/lqX2hBLpAUN5Or5i8ASdX7p/gsi/qgsi.html>. De forma particular, las más recomendables son las _ExpressLuke GSI_: <https://sourceforge.net/projects/expressluke-gsis/files/>. Las _ROMs_ que son compatibles con el Mi A1 son todas aquellas que sean **ARM64 A/B** &#8211; no confundir con **A64 A/B**.
+Finalmente, las _ROMs GSI_ se pueden descargar desde este enlace: <https://www.elranchodecornelio.com/a1index/content/treble/qgsi.html>. De forma particular, las más recomendables son las _ExpressLuke GSI_: <https://sourceforge.net/projects/expressluke-gsis/files/>. Las _ROMs_ que son compatibles con el Mi A1 son todas aquellas que sean **ARM64 A/B** &#8211; no confundir con **A64 A/B**.
 
-Una vez descargada la _ROM_, si está en formato _**img.xz**_, hay que descomprimirlo para obtener la imagen _**img**__._ En Linux, se puede usar el comando _**unxz**_; en Windows, se puede usar un descompresor como WinRAR o similar.
+Una vez descargada la _ROM_, si está en formato _**img.xz**_, hay que descomprimirlo para obtener la imagen _**img**_. En Linux, se puede usar el comando `unxz`; en Windows, se puede usar un descompresor como WinRAR o similar.
 
 Movemos todos los archivos al dispositivo (recomendable la tarjeta SD) y procedemos a instalarlos en el siguiente orden:
 
@@ -190,40 +190,38 @@ Movemos todos los archivos al dispositivo (recomendable la tarjeta SD) y procede
         Una vez hemos llegado aquí, lo más difícil ya está hecho. Ahora, toca cambiar el tamaño de la **partición del sistema**. Debido al proceso de hacer _Treble_, la imagen de _system_ queda más pequeña de lo normal, de forma que no se pueden añadir más componentes.
         
         Para cambiar el tamaño de la partición, vamos al menú &#8220;_Wipe_&#8221; y seleccionamos la partición _System_. Ahora, en lugar de deslizar para formatear, vamos a _**Repair or Change filesystem**_ y seleccionamos la opción que dice &#8220;_Resize file system_&#8220;. Si el proceso falla (código de error **1**), no te preocupes: reinicia en _recovery_ de nuevo y vuelve a intentarlo hasta que funcione.
-        
-        <div id="attachment_546" style="width: 310px" class="wp-caption aligncenter">
-          <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41.png"><img aria-describedby="caption-attachment-546" loading="lazy" class="wp-image-546 size-medium" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-300x55.png" alt="" width="300" height="55" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-300x55.png 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-768x141.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-900x165.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980.png 1017w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-          
-          <p id="caption-attachment-546" class="wp-caption-text">
-            Botón para cambiar el sistema de archivos
-          </p>
-        </div>
+
+        {{< lazyimage src="images/repair-fs.png" caption="En el menú *wipe*, opción para cambiar y modificar el sistema de ficheros" >}}
         
         Finalmente, instalamos las **Google Apps** (para tener acceso a las apps de Google, como la Play Store, etc.) y **Magisk,** en ambos casos _solo si queremos_, ya que no es imprescindible.
         
-        Las **Google Apps** se pueden descargar desde aquí: <https://filedn.com/lqX2hBLpAUN5Or5i8ASdX7p/gapps/thegapps.html> &#8211; sirven por igual las _Mini-ME_ y _Standard._
+        Las **Google Apps** se pueden descargar desde aquí: <https://www.elranchodecornelio.com/thegappsinstaller> &#8211; sirven por igual las _Mini-ME_ y _Standard._
         
         **Magisk** puede ser descargado desde el siguiente enlace: <https://github.com/topjohnwu/Magisk/releases> &#8211; es **importante** que la versión de Magisk sea **mayor a la 17**, en otro caso fallará.
-        
-        [<img loading="lazy" class="wp-image-553 size-large aligncenter" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-21_14-22-14-e1574342582607-603x1024.jpg" alt="" width="603" height="1024" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-21_14-22-14-e1574342582607-603x1024.jpg 603w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-21_14-22-14-e1574342582607-177x300.jpg 177w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-21_14-22-14-e1574342582607.jpg 720w" sizes="(max-width: 603px) 100vw, 603px" />][14]
-        
+
+        {{< lazyimage src="images/android10.jpg" width=400 >}}
+                
         Y ya estaría, tenemos instalada una _ROM_ Android 10 en el Mi A1 😱
         
         Si te ha sido útil, por favor dedica un minuto a compartirlo 🙂
         
-        ## <span style="color: #0000ff;">6. Sección de ayuda [Q & A]</span> {#qa}
+        ## 6. Sección de ayuda [Q & A] {#qa}
         
-        ### _<span style="color: #000000;">Bootloop</span>_
+        ### Bootloop
         
-        El terminal entra en _bootloop_ cuando nunca se llega a iniciar el sistema. Si te ocurre esto, lo más probable es porque **el TWRP ya no es capaz de cambiar de _slot_**. Si sigues teniendo acceso al _recovery_, solucionar esto es muy sencillo:
+        El terminal entra en _bootloop_ cuando nunca se llega a iniciar el sistema. Si te ocurre esto, lo más probable es porque **el TWRP ya no es capaz de cambiar de _slot_**. Si sigues teniendo acceso al _recovery_, solucionarlo es muy sencillo:
         
-          * Inicia a _fastboot_ manteniendo pulsadas las teclas de _**Power**_ _**(E)**_ y **bajar volumen _(Vol -)_**.
-          * Conecta el móvil al PC y comprueba que el ordenador es capaz de encontrarlo (puede que necesites descargar los _drivers_; puedes hacerlo desde este enlace: <https://goo.gl/YReSLX>): <pre class="brush: bash; title: ; notranslate" title="">fastboot devices
-</pre>
+          * Inicia a _fastboot_ manteniendo pulsadas las teclas de _**Power** **(E)**_ y **bajar volumen _(Vol -)_**.
+          * Conecta el móvil al PC y comprueba que el ordenador es capaz de encontrarlo (puede que necesites descargar los _drivers_; puedes hacerlo desde este enlace: <https://goo.gl/YReSLX>): 
+            ```shell
+            fastboot devices
+            ```
         
-          * Finalmente, hacemos que el móvil cambie de _slot_ &#8211; si estaba en el _slot A,_ se cambia al _slot B_ y viceversa: <pre class="brush: bash; title: ; notranslate" title="">fastboot current-slot  # anotamos el slot actual
-fastboot --set-active=b  # ponemos el otro slot
-</pre>
+          * Finalmente, hacemos que el móvil cambie de _slot_ &#8211; si estaba en el _slot A,_ se cambia al _slot B_ y viceversa: 
+            ```shell
+            fastboot current-slot    # anotamos el slot actual
+            fastboot --set-active=b  # ponemos el otro slot
+            ```
         
           * Reiniciamos en _recovery_ y comprobamos que, en efecto, podemos ya cambiar el _slot_ desde allí.
         
@@ -232,14 +230,8 @@ fastboot --set-active=b  # ponemos el otro slot
         ### Error en la partición _data_
         
         Hay muchas veces en las que, al hacer un _wipe_ sobre la partición _data_, se produce un fallo que se muestra **con texto en rojo en la pantalla**.
-        
-        <div id="attachment_561" style="width: 310px" class="wp-caption aligncenter">
-          <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31.jpg"><img aria-describedby="caption-attachment-561" loading="lazy" class="size-medium wp-image-561" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31-300x225.jpg" alt="" width="300" height="225" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31-300x225.jpg 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31-1024x768.jpg 1024w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31-768x576.jpg 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31-900x675.jpg 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/photo_2019-11-22_12-22-31.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-          
-          <p id="caption-attachment-561" class="wp-caption-text">
-            Error en la partición data
-          </p>
-        </div>
+
+        {{< lazyimage src="images/data-err.jpg" caption="Error en la partición `data`" >}}
         
         Para solucionar esto, los pasos a seguir son muy sencillos (obviamente, se borrarán todos los datos en esa partición):
         
@@ -252,14 +244,15 @@ fastboot --set-active=b  # ponemos el otro slot
         
         ### Sistema congelado por la _GCam_
         
-        La actualización de Android 10 tiene algunos problemas con las cámaras de Google (no es por usar _GSI_, está generalizado inclusive en los teléfonos Pixel), el cual provoca que el sistema se congele, se reinicie y se desconfigure.
+        La actualización de Android 10 tiene algunos problemas con las cámaras de Google (no es por usar _GSI_, está generalizado inclusive en los teléfonos Pixel, el cual provoca que el sistema se congele, se reinicie y se desconfigure.
         
         Para solucionar este problema, hay que ejecutar las siguientes órdenes, o bien usando ADB o bien ejecutando una consola como _root_ (por ejemplo, [Termux][15]):
         
-        <pre class="brush: bash; title: ; notranslate" title="">settings put global setup_wizard_has_run 1
-settings put secure user_setup_complete 1
-settings put global device_provisioned 1
-</pre>
+        ```shell
+        settings put global setup_wizard_has_run 1
+        settings put secure user_setup_complete 1
+        settings put global device_provisioned 1
+        ```
         
         Hay algunas _GCam_ que evitan este problema, puedes buscarlas si estás interesado en poder usarlas sin muchos problemas (la que he probado y que funciona es la _Razer V2.0_ o algunas _GCam 5_).
         
@@ -271,41 +264,26 @@ settings put global device_provisioned 1
           2. Ponemos el archivo **img** en una carpeta que tengamos localizada, preferiblemente en la tarjeta SD.
           3. Apagamos el terminal y lo **iniciamos en modo** _recovery_ (pulsando el botón de **encendido (E)** y **subir volumen (Vol. +)**).
           4. Cambiamos el _slot activo_. Para ello, vamos al menú _**Reboot**_ y seleccionamos el otro _slot_ (si estamos en el _slot A_, por ejemplo, elegimos el _slot B_ y viceversa). Después, reiniciamos de nuevo en _recovery_. 
-            <div id="attachment_544" style="width: 310px" class="wp-caption aligncenter">
-              <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792.png"><img aria-describedby="caption-attachment-544" loading="lazy" class="size-medium wp-image-544" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-300x121.png" alt="" width="300" height="121" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-300x121.png 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-768x310.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792-900x363.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-26-e1574338662792.png 1022w" sizes="(max-width: 300px) 100vw, 300px" /></a>
-              
-              <p id="caption-attachment-544" class="wp-caption-text">
-                Cambio de <em>slot </em>en TWRP
-              </p>
-            </div>
+             {{< lazyimage src="images/slots.png" caption="Cambio de *slot* en TWRP" >}}
             
-            Esto permite **instalar la actualización en el otro _slot_**, de manera que si algún paso de la actualización fuera mal o existiera algún error, podríamos **cambiar al _slot_ anterior** y recuperar nuestro dispositivo sin errores.</li> 
+              Esto permite **instalar la actualización en el otro _slot_**, de manera que si algún paso de la actualización fuera mal o existiera algún error, podríamos **cambiar al _slot_ anterior** y recuperar nuestro dispositivo sin errores.
             
-              * Una vez el dispositivo se haya iniciado de nuevo, comprobamos que en efecto se ha cambiado el _slot_, y nos dirigimos al menú _**Install**__._ Allí, navegamos hasta la ruta en la que hemos descargado anteriormente la **actualización de la ROM** y escogemos la opción de _**Install image**__._ 
-                <div id="attachment_551" style="width: 179px" class="wp-caption aligncenter">
-                  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11.png"><img aria-describedby="caption-attachment-551" loading="lazy" class="size-medium wp-image-551" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-169x300.png" alt="" width="169" height="300" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-169x300.png 169w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-576x1024.png 576w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-768x1365.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-864x1536.png 864w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11-900x1600.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-11.png 1080w" sizes="(max-width: 169px) 100vw, 169px" /></a>
-                  
-                  <p id="caption-attachment-551" class="wp-caption-text">
-                    Instalando la imagen del sistema
-                  </p>
-                </div>
+              * Una vez el dispositivo se haya iniciado de nuevo, comprobamos que en efecto se ha cambiado el _slot_, y nos dirigimos al menú _**Install**_. Allí, navegamos hasta la ruta en la que hemos descargado anteriormente la **actualización de la ROM** y escogemos la opción de _**Install image**_.
+                {{< lazyimage src="images/install-system.png" caption="Instalando la imagen del sistema" width=300 >}}
                 
                 Seleccionamos el archivo **img** que hemos descomprimido anteriormente y lo instalamos. Cuando haya finalizado la instalación, vamos al menú de _**Reboot**_ y reiniciamos de nuevo en _recovery_.  
                 Si, además, es la primera vez que actualizamos el sistema por este método, será necesario **instalar la imagen _boot_** también. Para ello, en la ruta donde se haya descargado, la seleccionamos y la instalamos por el mismo método por el que hemos instalado el sistema. En principio no sería necesario, pero por precacución después de hacer este paso **también instalaremos el _recovery_** de nuevo.
+
+                {{< lazyimage src="images/flash-boot.png" caption="Instalando *boot* como partición `boot`" width=300 >}}
                 
-                <div id="attachment_550" style="width: 179px" class="wp-caption aligncenter">
-                  <a href="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05.png"><img aria-describedby="caption-attachment-550" loading="lazy" class="size-medium wp-image-550" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-169x300.png" alt="" width="169" height="300" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-169x300.png 169w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-576x1024.png 576w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-768x1365.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-864x1536.png 864w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05-900x1600.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-05-05.png 1080w" sizes="(max-width: 169px) 100vw, 169px" /></a>
-                  
-                  <p id="caption-attachment-550" class="wp-caption-text">
-                    Instalando boot como partición boot
-                  </p>
-                </div></li> 
+              * Ahora, cambiamos el tamaño a la partición del sistema. Para ello, seleccionamos la opción _**Wipe**_ y marcamos la partición _System_. Pulsando el botón _**Repair or change filesystem**_, accedemos a un nuevo menú en el cual debemos escoger la opción de _**Resize** **filesystem**_.
+
+                {{< lazyimage src="images/repair-fs.png" >}}  
                 
-                  * Ahora, cambiamos el tamaño a la partición del sistema. Para ello, seleccionamos la opción _**Wipe**_ y marcamos la partición _System_. Pulsando el botón _**Repair or change filesystem**_, accedemos a un nuevo menú en el cual debemos escoger la opción de _**Resize** **filesystem**.  
-                    [<img loading="lazy" class="size-medium wp-image-546 aligncenter" src="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-300x55.png" alt="" width="300" height="55" srcset="https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-300x55.png 300w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-768x141.png 768w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980-900x165.png 900w, https://blog.javinator9889.com/wp-content/uploads/2019/11/Screenshot_2019-11-21-13-04-41-e1574342307980.png 1017w" sizes="(max-width: 300px) 100vw, 300px" />][16]  
-_ Una vez el proceso haya finalizado sin errores (si hay algún problema, reiniciamos de nuevo en _recovery_ y volvemos a intentar el proceso), estamos listos para instalar los _extras_ que usemos.
-                  * Finalmente, procedemos a **instalar las _GApps_** en caso de que queramos usarlas. Al igual que en el paso 5, vamos a la ruta donde estén descargadas y seleccionamos la opción _**Install zip**_. Escogemos las _GApps_ que queramos usar y las instalamos.
-                  * Ya estamos listos para iniciar de nuevo en el sistema y disfrutar de la **nueva actualización** de la _ROM_.</ol>
+                Una vez el proceso haya finalizado sin errores (si hay algún problema, reiniciamos de nuevo en _recovery_ y volvemos a intentar el proceso), estamos listos para instalar los _extras_ que usemos.
+
+              * Finalmente, procedemos a **instalar las _GApps_** en caso de que queramos usarlas. Al igual que en el paso 5, vamos a la ruta donde estén descargadas y seleccionamos la opción _**Install zip**_. Escogemos las _GApps_ que queramos usar y las instalamos.
+              * Ya estamos listos para iniciar de nuevo en el sistema y disfrutar de la **nueva actualización** de la _ROM_.
 
  [1]: https://www.android.com/android-10/
  [2]: https://t.me/dpakernel
