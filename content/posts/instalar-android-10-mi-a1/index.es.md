@@ -25,7 +25,7 @@ Ya que, oficialmente, no hay **ninguna versión del sistema** para el terminal, 
 
 # _Disclaimer_
 
-```
+```text
   Este tutorial se ha hecho con fines educativos y no busca en ningún
   momento criticar ninguna marca y/o empresa.
 
