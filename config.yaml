@@ -180,3 +180,6 @@ services:
         disableInlineCSS: true
     twitter:
         disableInlineCSS: true
+
+imaging:
+  quality: 100
