@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import FrozenSet, Dict
 
 
-def find_all(types: set = {'*.png', '*jpg'}, directory: str = "public/") -> FrozenSet[Path]:
+def find_all(types: set = {'*.png', '*jpg'}, directory: str = "public/*/") -> FrozenSet[Path]:
     files = set()
     for file_type in types:
         files.update({Path(src)

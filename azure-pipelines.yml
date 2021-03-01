@@ -96,7 +96,7 @@ jobs:
               inputs:
                 sshEndpoint: "Production server"
                 sourceFolder: $(Build.ArtifactStagingDirectory)/public
-                targetFolder: ~/webserver
+                targetFolder: ~/blogserver
                 overwrite: true
 
             - task: SSH@0
