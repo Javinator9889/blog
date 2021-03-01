@@ -104,7 +104,7 @@ jobs:
               inputs:
                 sshEndpoint: "Production server"
                 runOptions: commands
-                commands: "./deploy.sh"
+                commands: "./deploy-blog.sh"
 
             - task: GitHubRelease@1
               displayName: "[GitHub] Create new release"
