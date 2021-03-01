@@ -35,6 +35,14 @@ languages:
                 - name: Categorías
                   url: categories/
                   weight: 10
+        homeInfoParams:
+          Title: "Javinator9889 - Blog"
+          Content: >
+            Bienvenidos a mi blog personal 😃.
+
+            - Aquí encontrarás distintas publicaciones sobre tecnología, noticias e información 🚀.
+
+            - Este blog es de código libre, y el código fuente se encuentra disponible en [GitHub](https://github.com/Javinator9889/blog)
 
     en:
         languageName: "English"
@@ -53,6 +61,14 @@ languages:
                 - name: Categories
                   url: categories/
                   weight: 10
+        homeInfoParams:
+          Title: "Javinator9889 - Blog"
+          Content: >
+            Welcome to my personal blog 😃.
+
+            - Here you will find different blog posts about technology, news and information 🚀.
+
+            - This blog is open source, and its code is available at [GitHub](https://github.com/Javinator9889/blog)
 
 outputs:
     home:
@@ -62,8 +78,8 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-    author: Theme PaperMod
+    description: "Many kind of posts by Javinator9889 talking about new technologies, news and information"
+    author: Javinator9889
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -76,7 +92,7 @@ params:
     ShowBreadCrumbs: true
     ShowToc: true
     # comments: false
-    images: ["papermod-cover.png"]
+    images: ["cover.png"]
     cover:
       responsiveImages: true
       linkFullImages: true
@@ -94,22 +110,13 @@ params:
             - name: Tags
               url: tags
 
-    homeInfoParams:
-        Title: "PaperMod"
-        Content: >
-            Welcome to demo of hugo's theme PaperMod.
-
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
-
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
+          url: "https://github.com/Javinator9889"
         - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
+          url: "https://ko-fi.com/javinator9889"
+        - name: twitter
+          url: "https://twitter.com/javinator9889"
         - name: RsS
           url: "index.xml"
 
@@ -118,9 +125,10 @@ params:
     #     icon: icon.png
     #     iconHeight: 35
 
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+    analytics:
+        google:
+            enable: true
+            ID: "UA-125520964-2"
 
     # assets:
     #     favicon: "<link / abs url>"
