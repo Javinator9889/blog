@@ -1,0 +1,193 @@
+url: https://blog.javinator9889.com
+name: 'Javinator9889 - Blog'
+title: 'Javinator9889 - Blog'
+description: The Official Blog of the Javinator9889's web page
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-125520964-2
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+languages:
+    es:
+        languageName: "Español"
+        weight: 1
+        menu:
+            main:
+                - name: Registro
+                  url: archives
+                  weight: 5
+                - name: Búsqueda
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categorías
+                  url: categories/
+                  weight: 10
+        homeInfoParams:
+          Title: "Javinator9889 - Blog"
+          Content: >
+            Bienvenidos a mi blog personal 😃.
+
+            - Aquí encontrarás distintas publicaciones sobre tecnología, noticias e información 🚀.
+
+            - Este blog es de código libre, y el código fuente se encuentra disponible en [GitHub](https://github.com/Javinator9889/blog)
+
+    en:
+        languageName: "English"
+        weight: 2
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Categories
+                  url: categories/
+                  weight: 10
+        homeInfoParams:
+          Title: "Javinator9889 - Blog"
+          Content: >
+            Welcome to my personal blog 😃.
+
+            - Here you will find different blog posts about technology, news and information 🚀.
+
+            - This blog is open source, and its code is available at [GitHub](https://github.com/Javinator9889/blog)
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Many kind of posts by Javinator9889 talking about new technologies, news and information"
+    author: Javinator9889
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowToc: true
+    # comments: false
+    images: ["cover.png"]
+    cover:
+      responsiveImages: true
+      linkFullImages: true
+
+    profileMode:
+        enabled: false
+        title: PaperMod
+        imageUrl: "#"
+        imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Javinator9889"
+        - name: KoFi
+          url: "https://ko-fi.com/javinator9889"
+        - name: twitter
+          url: "https://twitter.com/javinator9889"
+        - name: RsS
+          url: "index.xml"
+
+    # label:
+    #     text: "Home"
+    #     icon: favicon.png
+    #     iconHeight: 35
+
+    analytics:
+        google:
+            enable: true
+            ID: "UA-125520964-2"
+
+    assets:
+        favicon: "favicon.png"
+        favicon16x16: "favicon16x16.png"
+        favicon32x32: "favicon32x32.png"
+        apple_touch_icon: "apple-icon.png"
+        # safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #     hidden: true # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: true # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
+
+imaging:
+  quality: 100

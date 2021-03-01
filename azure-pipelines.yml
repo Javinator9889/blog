@@ -1,0 +1,120 @@
+#
+# Azure Pipelines for building and pushing HUGO website
+#
+trigger:
+  - main
+  - azure-pipelines
+  - dev
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  hugo.version: '0.80.0'
+
+name: 1.0.$(Rev:rr).$(Date:yyyyMMdd)
+
+jobs:
+  - job: "HUGO_build"
+    displayName: "[HUGO] Build static website"
+    steps:
+      - checkout: self
+        submodules: recursive
+        displayName: "[Git] Get entire source with submodules"
+
+      - script: |
+          wget -c https://github.com/gohugoio/hugo/releases/download/v$(hugo.version)/hugo_$(hugo.version)_Linux-64bit.deb
+        displayName: "[Download] Get HUGO release"
+
+      - script: 'sudo dpkg -i hugo_$(hugo.version)_Linux-64bit.deb'
+        displayName: "[Install] Install HUGO package"
+
+      - script: 'sudo apt-get update && sudo apt-get install -y webp npm'
+        displayName: "[Install] Install WebP & NPM package tools"
+
+      - script: 'sudo npm install -g postcss-cli'
+        displayName: "[NPM] Install PostCSS for managing CSS files"
+
+      - script: 'npm install'
+        displayName: "[NPM] Install required PostCSS plugins"
+
+      - script: 'hugo --minify --enableGitInfo --verbose --environment production'
+        workingDirectory: $(Build.SourcesDirectory)
+        displayName: "[Build] Create static HTML site"
+
+      - script: 'python3 webp.convert.py'
+        displayName: "[Build] Compress images to WebP format"
+
+      - task: CopyFiles@2
+        displayName: "[Copy] public → Artifacts directory"
+        inputs:
+          SourceFolder: $(Build.SourcesDirectory)/public
+          TargetFolder: $(Build.ArtifactStagingDirectory)/public
+
+      - task: ArchiveFiles@2
+        displayName: "[TAR] Compress HUGO build directory"
+        inputs:
+          rootFolderOrFile: $(Build.ArtifactStagingDirectory)/public
+          archiveType: tar
+          tarCompression: gz
+          archiveFile: $(Build.ArtifactStagingDirectory)/blog-$(Build.BuildNumber).tar.gz
+
+      - task: PublishBuildArtifacts@1
+        displayName: "[Publish] Upload build directory"
+        inputs:
+          PathtoPublish: $(Build.ArtifactStagingDirectory)/blog-$(Build.BuildNumber).tar.gz
+          ArtifactName: $(Build.BuildNumber)
+          publishLocation: Container
+
+  - deployment: 
+    displayName: "Deploy to web server"
+    environment: webserver
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    dependsOn: ["HUGO_build"]
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - download: none
+
+            - task: DownloadBuildArtifacts@0
+              displayName: "[Download] Get compiled artifacts"
+              inputs:
+                buildType: current
+                artifactName: $(Build.BuildNumber)
+                downloadPath: $(Build.ArtifactStagingDirectory)
+
+            - task: ExtractFiles@1
+              displayName: "[TAR] Extract site"
+              inputs:
+                archiveFilePatterns: '$(Build.ArtifactStagingDirectory)/**/*.tar.gz'
+                destinationFolder: '$(Build.ArtifactStagingDirectory)'
+                cleanDestinationFolder: false
+
+            - task: CopyFilesOverSSH@0
+              displayName: "[SSH] Upload files to production server"
+              inputs:
+                sshEndpoint: "Production server"
+                sourceFolder: $(Build.ArtifactStagingDirectory)/public
+                targetFolder: ~/blogserver
+                overwrite: true
+
+            - task: SSH@0
+              displayName: "[SSH] Sync files with remote directory"
+              inputs:
+                sshEndpoint: "Production server"
+                runOptions: commands
+                commands: "./deploy.sh"
+
+            - task: GitHubRelease@1
+              displayName: "[GitHub] Create new release"
+              inputs:
+                gitHubConnection: github.com_Javinator9889
+                repositoryName: '$(Build.Repository.Name)'
+                action: create
+                target: '$(Build.SourceVersion)'
+                tagSource: userSpecifiedTag
+                tag: 'v$(Build.BuildNumber)'
+                addChangeLog: true
+                title: 'v$(Build.BuildNumber)'
+                assets: '$(Build.ArtifactStagingDirectory)/**/*.tar.gz'
