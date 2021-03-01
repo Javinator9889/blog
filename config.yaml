@@ -76,9 +76,7 @@ outputs:
         - HTML
         - RSS
         - JSON
-
-canonifyURLs: true
-
+        
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Many kind of posts by Javinator9889 talking about new technologies, news and information"
