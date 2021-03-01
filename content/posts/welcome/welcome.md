@@ -14,10 +14,7 @@ Welcome to the **Javinator9889**&#8216;s official blog, a place where you will 
 
 I invite you to navigate through it and, if you _have some interesting ideas_, tell me those with the form you have right below.
 
-Greeting,
-
-![sign](/welcome/images/sign.png)
-<!-- <img alt="" src="sign.png"> -->
+Greetings
 
 <!--more-->
 

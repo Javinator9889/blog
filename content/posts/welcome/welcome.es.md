@@ -14,9 +14,7 @@ Bienvenido al blog oficial de **Javinator9889**, un lugar donde podrás encontr
 
 Te invito a que navegues por él, y si tienes _alguna idea interesante_ proponla en el formulario que encontrarás debajo.
 
-Un saludo,
-
-![sign](/welcome/images/sign.png)
+Un saludo
 
 <!--more-->
 
