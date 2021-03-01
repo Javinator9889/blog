@@ -28,6 +28,8 @@ En la [sección anterior][1] vimos una pequeña introducción a la _Programaci�
   * Noción básica de programación y tipos de datos, así como _tipos abstractos de datos_.
   * Haber leído la sección anterior.
 
+## Índice
+
   1. **[Introducción][1]**
   2. [_**Clases y visibilidad**_][2]
   3. **Herencia**
