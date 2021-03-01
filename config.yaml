@@ -1,4 +1,5 @@
-url: https://blog.javinator9889.com
+# url: https://blog.javinator9889.com
+baseURL: https://blog.javinator9889.com
 name: 'Javinator9889 - Blog'
 title: 'Javinator9889 - Blog'
 description: The Official Blog of the Javinator9889's web page
@@ -24,7 +25,7 @@ languages:
         menu:
             main:
                 - name: Registro
-                  url: archives
+                  url: archives/
                   weight: 5
                 - name: Búsqueda
                   url: search/
@@ -50,7 +51,7 @@ languages:
         menu:
             main:
                 - name: Archive
-                  url: archives
+                  url: archives/
                   weight: 5
                 - name: Search
                   url: search/
@@ -75,6 +76,8 @@ outputs:
         - HTML
         - RSS
         - JSON
+
+canonifyURLs: true
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
