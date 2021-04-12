@@ -7,7 +7,7 @@ tags = ["package", "ubuntu", "snap store", "linux", "ppa", "termius", "deb"]
 title = "Termius PPA: #1 SSH platform app as a repository!"
 url = "/termius-ppa"
 [cover]
-image = "/uploads/termius.png"
+image = ""
 
 +++
 Hello world!
