@@ -28,4 +28,4 @@ fields:
   name: tags
   label: tags
 pages:
-- content/posts/termius-ppa/termius-ppa.md
+- content/posts/termius-ppa/index.md
