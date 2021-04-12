@@ -47,10 +47,10 @@ Then, add the repository to your `sources.list` as follows:
 
 ```bash
 # Stable repository
-sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com/ all main"
+sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com all main"
 
 # Beta repository
-sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com/ public-beta main"
+sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com public-beta main"
 ```
 
 Finally, update and install Discord:
