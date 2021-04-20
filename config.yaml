@@ -136,6 +136,7 @@ params:
         favicon16x16: "favicon16x16.png"
         favicon32x32: "favicon32x32.png"
         apple_touch_icon: "apple-icon.png"
+        disableHLJS: true
         # safari_pinned_tab: "<link / abs url>"
 
     # cover:
@@ -157,14 +158,14 @@ taxonomies:
     tag: tags
     series: series
 
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         # noClasses: false
-#         style: monokai
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: fruity
 
 privacy:
     vimeo:
