@@ -92,7 +92,7 @@ params:
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowToc: true
-    # comments: false
+    comments: true
     images: ["cover.png"]
     cover:
       responsiveImages: true
