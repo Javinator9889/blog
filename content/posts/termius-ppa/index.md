@@ -56,10 +56,10 @@ Then, add the repository to your `sources.list` as follows:
 
 ```bash
 # Stable repository
-sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main" | sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list
 
 # Beta repository
-sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main"
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main" | sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list
 ```
 
 Finally, update and install Termius:
@@ -81,12 +81,8 @@ sudo apt remove termius-app
 # If using public beta, uninstall as follows
 sudo apt remove termius-beta
 
-# Remove the repository using the add-apt-repository command
-# Keep in mind it must be the same as you added (stable, beta, etc.)
-sudo add-apt-repository -r "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
-
-# Removing *beta* repository
-sudo add-apt-repository -r "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main"
+# Remove the repository from the lists
+sudo rm /etc/apt/sources.list.d/javinator9889-ppa.list
 
 # Finally, remove the key if you want not to trust it anymore
 sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --delete-keys 08633B4AAAEB49FC
