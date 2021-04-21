@@ -41,9 +41,10 @@ In that way, the PPA is always up-to-date (with a delay of at most 15 minutes) a
 
 ## Installation
 
-Firstly, we need to **import** the GPG repository keys:
+Firstly, we need to <strong>import</strong> the GPG repository keys. In a previous version this was done using
+the `apt-key` command, but as for [January 2021](https://manpages.debian.org/testing/apt/apt-key.8.en.html#DESCRIPTION) it's deprecated and the recommended way has changed and it's a bit larger:
 ```bash
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 08633B4AAAEB49FC
+sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --keyserver keyserver.ubuntu.com --recv-keys 08633B4AAAEB49FC
 ```
 
 This is for authenticating the repository and avoiding someone phishing you if there is any kind of trouble with the DNS.
@@ -55,10 +56,10 @@ Then, add the repository to your `sources.list` as follows:
 
 ```bash
 # Stable repository
-sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com all main"
+sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
 
 # Beta repository
-sudo add-apt-repository "deb [arch=amd64] https://ppa.javinator9889.com public-beta main"
+sudo add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main"
 ```
 
 Finally, update and install Termius:
@@ -82,13 +83,13 @@ sudo apt remove termius-beta
 
 # Remove the repository using the add-apt-repository command
 # Keep in mind it must be the same as you added (stable, beta, etc.)
-sudo add-apt-repository -r "deb [arch=amd64] https://ppa.javinator9889.com all main"
+sudo add-apt-repository -r "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
 
 # Removing *beta* repository
-sudo add-apt-repository -r "deb [arch=amd64] https://ppa.javinator9889.com public-beta main"
+sudo add-apt-repository -r "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main"
 
 # Finally, remove the key if you want not to trust it anymore
-sudo apt-key del 08633B4AAAEB49FC
+sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa-keyring.gpg --delete-keys 08633B4AAAEB49FC
 ```
 
 ## Final thoughts and considerations
