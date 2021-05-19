@@ -12,7 +12,7 @@ pool:
 variables:
   hugo.version: '0.80.0'
 
-name: 1.2.$(Rev:rr).$(Date:yyyyMMdd)
+name: 1.3.$(Rev:rr).$(Date:yyyyMMdd)
 
 jobs:
   - job: "HUGO_build"
@@ -38,9 +38,15 @@ jobs:
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
 
+      - script: 'hugo --enableGitInfo --verbose --gc --buildDrafts --environment development'
+        workingDirectory: $(Build.SourcesDirectory)
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/dev')
+        displayName: "[Build] Create development HTML site"
+
       - script: 'hugo --minify --enableGitInfo --verbose --environment production'
         workingDirectory: $(Build.SourcesDirectory)
-        displayName: "[Build] Create static HTML site"
+        condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+        displayName: "[Build] Create production HTML site"
 
       - script: 'python3 webp.convert.py'
         displayName: "[Build] Compress images to WebP format"
