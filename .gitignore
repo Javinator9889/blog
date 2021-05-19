@@ -26,3 +26,6 @@ _testmain.go
 .DS_Store
 
 resources/
+
+# GIMP files
+*.xcf
