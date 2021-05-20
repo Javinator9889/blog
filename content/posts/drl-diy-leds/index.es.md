@@ -73,3 +73,10 @@ Antes de realizar ninguna operación sobre nuestro vehículo es recomendable cum
 | 16 | Pilas "AA" | Opcional | https://s.javinator9889.com/NbqA4Z |
 
 A lo largo de la entrada se irán detallando para qué son cada uno de los elementos anteriores y su utilidad. Se deriva al lector la responsabilidad de evaluar si un elemento opcional es necesario o no.
+
+# 2. Pasos previos
+Con la intención de que todo el proceso se realice bien a la primera, vamos a preparar el entorno.
+
+{{< lazyimage src="images/vehicle-sketch.png" >}}
+
+{{< lazyimage src="images/elec.png" >}}
