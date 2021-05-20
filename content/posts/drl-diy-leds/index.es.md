@@ -75,7 +75,45 @@ Antes de realizar ninguna operación sobre nuestro vehículo es recomendable cum
 A lo largo de la entrada se irán detallando para qué son cada uno de los elementos anteriores y su utilidad. Se deriva al lector la responsabilidad de evaluar si un elemento opcional es necesario o no.
 
 # 2. Pasos previos
-Con la intención de que todo el proceso se realice bien a la primera, vamos a preparar el entorno.
+Con la intención de que todo el proceso se realice bien a la primera, vamos a preparar el entorno de trabajo. Es necesario que nos instalemos en algún sitio amplio donde estemos **cómodos**, sin **muchas molestias** y sobre todo que podamos tener una **gran movilidad** para trabajar con el coche. Es posible también alquilar un taller mecánico por horas para realizar todo el proceso, con el consiguiente coste que conlleva.
+
+En principio, todo el proceso se podría hacer en aproximadamente **~2 horas/2h 30'** pero el hacerlo bien y con cuidado puede conllevar a que el tiempo pase a ser de **unas 5 horas**, así que mejor reservar la mañana (o el día).
+
+## ¿Qué vamos a hacer?
+Vamos a montar un sistema de luces diurnas DRL **completamente reversible** y **seguro**, aprovechando la circuitería del propio coche. La idea será colocar el nuevo circuito que alimentará y gestionará las luces como un elemento completamente independiente y aislado del resto del coche. De esta forma, conseguimos:
+
+ 1. Tener un sistema autónomo e independiente.
+ 2. Tener un montaje reversible, ya que *evitamos alterar el estado del vehículo*.
+ 3. Tener un equipo seguro: con su circuito independiente, si se produce un cortocircuito **solo** afectará a dicho circuito.
+ 4. Tener un sistema **actualizable**: ¿no te gustan las luces? ¿Necesitas más luminosidad? ¿Quieres usar unos LEDs homologados? Al ser un circuito reversible, en un momento dado es tan sencillo como "cambiar las bombillas".
+
+Para realizar este proyecto y que salga bien a la primera vamos a aplicar unas pinceladas del **proceso de ingeniería**. Con esto nos aseguramos que no damos ningún paso en falso y que los problemas están, en su mayoría, solucionados antes de que sucedan. De entre todos los pasos del proceso de ingeniería, vamos a poner en práctica los siguientes:
+
+ + Definición \*superficial\* de los requisitos que queremos satisfacer.
+ + Diseño y verificación del circuito a montar.
+ + Implementación paso a paso con un respaldo de pruebas.
+ + Verificación final del sistema y solución de problemas.
+
+### Definición de los requisitos
+El objetivo principal es **tener un sistema de luces diurnas** DRL el cual cuente un **circuito independiente** de forma que, si se produce un cortocircuito o hay algún fallo eléctrico, el único sistema que se vea afectado sea el DRL. Por otra parte, deberá ser **completamente revertible** permitiendo su extracción sin dañar perjudicialmente al vehículo. Adicionalmente y para perseverar la integridad tanto del vehículo como del sistema este deberá ser resistente al agua, en mayor o menor medida.
+
+El encendido y apagado del sistema deberá ser **completamente automático**, donde el conductor se limitará a usar el coche normalmente y las luces DRL se activarán/desactivarán automáticamente. Opcionalmente, el equipo se podrá integrar con la **electrónica existente del vehículo** de forma que cuando se activen los intermitentes del mismo las luces DRL reaccionarán ante dicho estímulo.
+
+Es decir, se tienen los siguientes requisitos:
+
+ 1. Luces DRL.
+ 2. Instalación eléctrica independiente.
+ 3. Instalación eléctrica reversible.
+ 4. Sistema resistente al agua.
+ 5. Encendido y apagado automáticos.
+ 6. Reacción opcional frente a los intermitentes.
+
+### Diseño y verificación del circuito a montar
+
+## Esquemáticos del vehículo
+## Esquemáticos del circuito de pruebas
+## Consideraciones de seguridad
+
 
 {{< lazyimage src="images/vehicle-sketch.png" >}}
 
