@@ -19,6 +19,7 @@ tags:
   - machine
   - mecánica
 draft: true
+katex: true
 
 ---
 
@@ -109,12 +110,48 @@ Es decir, se tienen los siguientes requisitos:
  6. Reacción opcional frente a los intermitentes.
 
 ### Diseño y verificación del circuito a montar
+Antes de realizar ninguna operación sobre el vehículo es fundamental definir una idea de qué vamos a hacer. Lo primero de todo será diseñar un circuito sobre un modelo genérico de coche que nos pueda servir de guía. Antes de diseñar el circuito hará falta tener en cuenta estas consideraciones:
 
-## Esquemáticos del vehículo
-## Esquemáticos del circuito de pruebas
+ + El motor alcanza altas temperaturas, por lo que los cables deberán estar lo mejor distribuidos posibles.
+ + Debido a la situación anterior, es recomendable usar la cantidad justa de cable, para evitar la exposición a las zonas de calor.
+ + El circuito va a estar "al aire libre" por lo que es recomendable situarlo en zonas medianamente protegidas del motor.
+ + NUNCA se deberá conectar directamente a la batería. Deberá ser un circuito independiente aislado del resto de la electrónica.
+ + Los elementos que se usen deben estar debidamente aislados y protegidos de las inclemencias del tiempo.
+ + Es necesario poder realizar cambios y sustituciones fácilmente una vez el sistema esté montado.
+
+De esta forma, se tiene el siguiente esquema de cómo debe realizarse la conexión:
+
+{{< lazyimage src="images/vehicle-sketch.png" caption="Instalación del sistema en un prototipo de vehículo." >}}
+
+Vamos a explicar el porqué del diseño anterior. Por una parte, las luces DRL están conectadas entre sí. Esto es debido a que ambas presentan un bajo consumo y el circuito no se somete a demasiada carga con este tipo de conexionado. Además, simplifica mucho el manejo de los cables. De esta forma, la luz de la izquierda conecta sus terminales positivo (en rojo) y negativo (en negro) a los de las luces de la derecha.
+
+Por otro lado, los terminales amarillos van conectados a una resistencia (que simboliza el decodificador LED) conectada directamente a los intermitentes del vehículo. Con esto, conseguimos que las luces reaccionen cuando accionamos los indicadores.
+
+Finalmente, pero no menos importante, la conexión a tierra va directamente al borne de la batería (lo cual es necesario). En la implementación sin embargo veremos que hay otras opciones igualmente válidas. Para la conexión del polo positivo (12V) se utiliza un fusible que se conectará al **cuadro de fusibles** del coche y alimentará al sistema por ahí. Esto permite que el sistema se encienda y apague automáticamente, según la posición del fusible; y que esté protegido frente a cortocircuitos, ya que tiene su circuito independiente.
+
+La intensidad máxima del fusible viene dada por el doble de la intensidad individual de cada una de las luces. En este caso, es necesario saber o bien **la potencia** de las luces DRL o bien **la intensidad máxima** que presentan. Si se conoce la intensidad individual, el valor del fusible será:
+
+$$A_F = 2I \tag{1}$$
+ 
+Si se conoce la potencia, hay que obtener la intensidad. Como la batería suministra 12V y la potencia es $P = V \cdot I$, entonces:
+
+$$I = \frac{P}{V} \approx \frac{P}{12} \tag{2}$$
+
+Por ejemplo, si cada luz DRL tiene una potencia de $2W$, la intensidad individual de cada una será:
+
+$$I = \frac{2}{12} \approx 166~mA$$
+
+De esta forma, el valor de la intensidad fusible usando la ecuación $\left(1\right)$ será:
+
+$$A_F = 2 \cdot 166 = 333~mA \longrightarrow 0.3~A$$
+
+Para este caso en particular, las luces que se usarán tienen una intensidad pico de $0.1~A$, por lo que el fusible que hay que usar deberá ser de al menos $0.2~A$. Sin embargo, fusibles de tan baja intensidad son difíciles de encontrar, por lo que usaremos el más bajo disponible - en este caso, de $3~A$.
+
+Con todo esto establecido, el circuito final queda de la siguiente forma:
+
+{{< lazyimage src="images/elec.png" caption="Circuito esquemático del sistema. Las luces DRL están conectadas entre sí y se alimentan desde la batería mediante un fusible de $3~A$ y se conectan a los intermitentes mediante un decodificador CANBus." >}}
+
+#### Circuito de pruebas (opcional)
+Si bien este paso es opcional, es altamente recomendado usar un circuito de pruebas para ir verificando que las conexiones se han realizado correctamente (y no comprometer la integridad de la batería del coche). El circuito que vamos a usar es muy simple:
+
 ## Consideraciones de seguridad
-
-
-{{< lazyimage src="images/vehicle-sketch.png" >}}
-
-{{< lazyimage src="images/elec.png" >}}

@@ -175,6 +175,7 @@ markup:
         table: true
         taskList: true
         typographer: true
+        katex: true
       parser:
         attribute:
           block: false
