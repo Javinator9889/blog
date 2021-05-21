@@ -38,12 +38,12 @@ jobs:
       - script: 'npm install'
         displayName: "[NPM] Install required PostCSS plugins"
 
-      - script: 'hugo --enableGitInfo --verbose --buildDrafts --environment development'
+      - script: 'hugo --enableGitInfo --verbose --buildDrafts --environment development --gc'
         workingDirectory: $(Build.SourcesDirectory)
         condition: eq(variables['Build.SourceBranch'], 'refs/heads/dev')
         displayName: "[Build] Create development HTML site"
 
-      - script: 'hugo --minify --enableGitInfo --verbose --environment production'
+      - script: 'hugo --minify --enableGitInfo --verbose --environment production --gc'
         workingDirectory: $(Build.SourcesDirectory)
         condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
         displayName: "[Build] Create production HTML site"
