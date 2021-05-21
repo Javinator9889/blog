@@ -59,20 +59,21 @@ Antes de realizar ninguna operación sobre nuestro vehículo es recomendable cum
 | 6 | Terminales de cobre | Necesario | https://s.javinator9889.com/KXb6qv |
 | 7 | Conectores en 'T' | Necesario | https://s.javinator9889.com/a47hvq |
 | 8 | *Add-A-Circuit* fusibles | Necesario - identificar el tamaño de los fusibles |  - Perfil bajo: https://s.javinator9889.com/BXRm59<br> - Perfil alto: https://s.javinator9889.com/NHMwdz |
-| 9 | Pelacables automático | Opcional, pero altamente recomendado | https://s.javinator9889.com/fkLRzg |
-| 10 | Decodificador/resistencia LED | Necesario | https://s.javinator9889.com/b7l74p |
-| 11 | Luces DRL impermeables | Necesario | https://s.javinator9889.com/ZzyPeN |
+| 9 | Bridas de plástico | Recomendable | https://s.javinator9889.com/vycCso |
+| 10 | Pelacables automático | Opcional, pero altamente recomendado | https://s.javinator9889.com/fkLRzg |
+| 11 | Decodificador/resistencia LED | Necesario | https://s.javinator9889.com/b7l74p |
+| 12 | Luces DRL impermeables | Necesario | https://s.javinator9889.com/ZzyPeN |
 
 **Materiales para realizar pruebas - opcional pero altamente recomendado:**
 
 |   |   |   |   |
 |:-:|:-:|:-:|:-:|
-| 12 | Porta pilas | Opcional | https://s.javinator9889.com/C9XJLm |
-| 13 | Interruptores | Opcional | https://s.javinator9889.com/T6oqMZ |
-| 14 | Placas PCB | Opcional - alternativa: protoboard (14) | https://s.javinator9889.com/uBGU63 |
-| 15 | Protoboard | Opcional - alternativa: placas PCB (13) | https://s.javinator9889.com/Xtp0AE |
-| 16 | Pines "de paso" de corriente | Opcional | https://s.javinator9889.com/gMjx58 |
-| 17 | Pilas "AA" | Opcional | https://s.javinator9889.com/NbqA4Z |
+| 13 | Porta pilas | Opcional | https://s.javinator9889.com/C9XJLm |
+| 14 | Interruptores | Opcional | https://s.javinator9889.com/T6oqMZ |
+| 15 | Placas PCB | Opcional - alternativa: protoboard (14) | https://s.javinator9889.com/uBGU63 |
+| 16 | Protoboard | Opcional - alternativa: placas PCB (13) | https://s.javinator9889.com/Xtp0AE |
+| 17 | Pines "de paso" de corriente | Opcional | https://s.javinator9889.com/gMjx58 |
+| 18 | Pilas "AA" | Opcional | https://s.javinator9889.com/NbqA4Z |
 
 A lo largo de la entrada se irán detallando para qué son cada uno de los elementos anteriores y su utilidad. Se deriva al lector la responsabilidad de evaluar si un elemento opcional es necesario o no.
 
@@ -252,3 +253,18 @@ Cerramos la unión con el plástico termoretráctil aplicando calor con un meche
 {{< youtube id="GCQIZ3nZIz8" title="Prueba de los DRL con el conexionado a intermitentes realizado." >}}
 
 Finalmente volvemos a repetir todo el proceso con la otra luz que queda pendiente.
+
+## 3.4. Colocación de las luces DRL en el vehículo
+Una vez hemos realizado las conexiones ya podemos pasar a **situar las luces DRL** en el vehículo. Como queremos que el sistema sea *completamente reversible* utilizaremos [**bridas de plástico**](https://s.javinator9889.com/vycCso) de forma que las luces se quedan aseguradas pero podemos quitarlas en cualquier momento cortando las bridas.
+
+Para colocar la luz en su sitio recomiendo usar una estrategia "muy curiosa": como se ha visto anteriormente, el espacio de maniobra es pequeño y el motor por dentro es una lija, por lo que es muy fácil cortarse o hacerse una herida. Como necesitamos sacar los cables **por encima** para poder manipularlos y es difícil introducir el brazo para poder cogerlos, vamos a hacerlo al revés. Primero, metes la luz por el hueco y **la sujetas con los cables que hemos soldado**. Después, como la rejilla es bastante flexible, introducimos la mano por la **rejilla inferior** y, haciendo péndulo con los cables, agarramos la luz DRL haciendo pinza con la mano. Después, basta con sacar la luz a través de la rejilla y ajustarla con las bridas (si los agujeros no vienen perforados se puede hacer a mano con un destornillador o algo afilado):
+
+{{< lazyimage src="images/drl-being-mounted.jpg" caption="Luz DRL sobre la rejilla inferior y con las bridas listas para ser fijada." >}}
+
+Fijamos la luz en la posición que queramos (idealmente lo más pegada a los extremos) y ajustamos las bridas, quitando el plástico sobrante:
+
+{{< lazyimage src="images/drl-mounted.jpg" caption=" " >}}
+
+Si **hacemos la instalación con intermitentes** es muy importante que la **orientación sea la adecuada**: en este caso, los intermitentes de los DRL no parpadean sino que hacen un efecto de desplazamiento. Por legislación, el sentido de dicho efecto debe ser acorde con el sentido del desplazamiento, para evitar la confusión (recordemos que los DRL son un elemento de seguridad pasiva).
+
+{{< lazyimage src="images/drl-front-mounted.jpg" caption="Luces DRL montadas en la rejilla inferior." >}}
