@@ -25,7 +25,9 @@ _testmain.go
 /public
 .DS_Store
 
-resources/
+# Resources are "deliberately placed in the project, as it is recommended to check these into source control as part of the project."
+# See: https://gohugo.io/content-management/image-processing/#image-processing-performance-consideration
+# resources/
 
 # GIMP files
 *.xcf
