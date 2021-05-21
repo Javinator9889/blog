@@ -173,3 +173,67 @@ Aunque no se va a trabajar con alta tensión, la batería del vehículo tiene mu
 De igual manera, habrán puntos de la entrada en donde se indicará que se **debe desconectar la batería**. Aunque en apariencia pueda sonar peligroso si se toman las precauciones adecuadas no lo es, y nos dará seguridad cuando manipulemos cables o hagamos conexiones.
 
 Finalmente, hay que tener **especial precaución** al conectar el circuito de pruebas. Si por un casual cerramos el circuito accidentalmente se sufre un alto riesgo de incendio. Asegurarse de que las conexiones de las baterías son correctas antes de encender nada (por eso, entre otros motivos, hay un interruptor).
+
+# 3. Implantación paso a paso del sistema DRL
+*Se sugiere leer detenidamente cada paso antes de realizar ninguna acción. Es recomendable estar seguro de lo que se ha de hacer*
+
+## 3.1. Preparación de los cables
+El primer paso consistirá en preparar los cables. En el dispositivo que venga es muy probable que dichos cables tengan una parte expuesta de cobre muy pequeña lo cual dificulta directamente el poder manipularlos. Como los queremos conectar a un cable preparado para el calor y más resistente, necesitamos pelarlos hasta que tengan un tamaño adecuado.
+
+{{< lazyimage src="images/cables-short.jpg" caption="Vista inicial de los cables. La parte expuesta de cobre es muy pequeña, por lo que hace falta quitar exceso de plástico envolvente." >}}
+
+Para ello, usando el [**pelacables**](https://s.javinator9889.com/fkLRzg) sugerido aumentamos significativamente la parte expuesta de cobre:
+
+{{< lazyimage src="images/cutting-cables.jpg" caption=" " >}}
+
+A continuación recubrimos los cables con [**tres cubiertas protectoras**](https://s.javinator9889.com/7rSrJW) de plástico aislante, ya que después no podremos añadirlo:
+
+{{< lazyimage src="images/cable-wrapper.jpg" caption="Plástico aislante termoretractil alrededor de los cables. Por cada polo (negativo y positivo) usaremos un plástico aislante para asegurarnos de que no se suelta la conexión. Con el plástico grande mantenemos las dos conexiones juntas y organizadas." >}}
+
+Del [**hilo de cobre resistente a altas temperaturas**](https://s.javinator9889.com/6kD10d) cortamos una sección *suficientemente larga* para cubrir toda la conexión del vehículo. Para ello es necesario irse al motor del coche y medir aproximadamente cuánto cable necesitamos para que vaya desde el frontal del parachoques hasta el cuadro de fusibles, localizado al lado del volante del conductor. Para este caso en particular, usar unos **2.5 m** de cable será suficiente.
+
+Realizamos un empalme rápido **enrollando los cables entre sí**. Es importante respetar el *código de color* (rojo positivo; negro a tierra) para después saber de un vistazo qué cables estamos manejando:
+
+{{< lazyimage src="images/joining-cables.jpg" caption="Empalme de los cables atándolos entre sí. De momento, el conector amarillo (de los intermitentes) se queda al aire, sin conectar." >}}
+
+Y para asegurarnos una conectividad duradera y segura, aplicamos con [**la estación de soldadura**](https://s.javinator9889.com/00kQHR) una gota de estaño sobre la unión:
+
+{{< lazyimage src="images/soldering-cables.jpg" caption="Unión definitiva de los cables soldándolos con estaño." >}}
+
+Si bien es cierto que el paso anterior **no es necesario**, realizar la soldadura de los cables nos asegurará una correcta y continua conductividad y reforzará la unión de los cables.
+
+Finalmente, movemos los **plásticos termoretráctiles** hasta cubrir los cables y, aplicando calor con un *mechero* o una *pistola de calor*, se cierran sobre la soldadura. Esto hay que hacerlo **plástico a plástico**, no es recomendable aplicar calor sobre los tres a la vez para que se cierren. El resultado final queda así:
+
+{{< lazyimage src="images/heating-cables.jpg" caption="Unión de los cables con el plástico aislante por encima. Esto añade resistencia a la humedad, al agua y evita que se suelte la soldadura." >}}
+
+Destacar que el **cable amarillo** debe quedarse fuera de la unión en todo momento, lo usaremos más adelante. Finalmente, pero no menos importante, deberemos comprobar que la luz DRL se enciende correctamente y funciona. En otro caso, la soldadura que hemos realizado es **incorrecta** y habrá que deshacerlo y repetir el proceso. 
+
+> *Nota: comprobar de antemano que las luces funcionan para no estar buscando una aguja en un pajar.*
+
+{{< youtube id="BTQ-iHfVyUQ" title="Primera prueba tras realizar el empalme de los DRL" >}}
+
+Si ya tenemos realizado este primer paso **debemos repetir el mismo proceso** pero con la otra luz DRL. En este caso, como se va a unir a la luz que acabamos de preparar, la longitud del cable deberá ser mucho más pequeña (unos 50~60 cm serán suficientes).
+
+## 3.2. Identificación del sitio de colocación de los DRL
+Aunque este paso pueda parecer simple, es fundamental para asegurarnos tanto **una correcta visibilidad** como un **correcto funcionamiento** de las luces. Evidentemente, se han de situar en el parachoques delantero pero hay distintos sitios válidos:
+
+{{< lazyimage src="images/frontal.png" caption="Ubicaciones válidas en la parrilla frontal del vehículo." >}}
+
+ 1. En la rejilla de ventilación inferior (en azul) los DRL se pueden colocar fácilmente y el sitio es flexible, lo que permite una mejor manipulación. Sin embargo, el acceso a la zona desde el motor es complejo y puede resultar tedioso.
+ 2. Encima de las luces antinieblas (en rojo) es un **muy buen sitio** para situar los DRL que otorga una gran visibilidad. Sin embargo, es necesario *agujerear* el parachoques para poder pasar los cables hacia el motor.
+ 3. El DRL situado en frente de las luces (en amarillo) es otra ubicación **con alta visibilidad** pero presenta dos pegas: es necesario agujerear o bien el parachoques o bien las luces para poder pasar los cables y puede **reducir la visibilidad**.
+ 4. En la rejilla de ventilación superior (en violeta) los DRL otorgan muy buena visibilidad y el acceso es sencillo. Sin embargo, el lugar no es flexible y es muy complejo cumplir con las regulaciones europeas en lo referente a la **distancia que debe separar las luces**.
+
+En este caso nos vamos a decantar por la opción primera por varios motivos:
+ + Ofrece un fácil acceso desde el exterior.
+ + Es un plástico blando que difícilmente se va a romper por presión o por ejercer fuerza.
+ + Con la distancia adecuada cumple el reglamento europeo de luces DRL.
+ + En la cavidad interior hay espacio suficiente para poner cables y añadir conexiones.
+
+A la zona se puede acceder desde arriba, donde está el propio motor y el radiador:
+
+{{< lazyimage src="images/rack-access.jpg" caption=" " >}}
+
+y en su interior presenta un gran hueco donde se pueden situar cables e incluso aprovechar los ya existentes para unirlos y que se mantengan fijos (para evitar movimientos durante la marcha):
+
+{{< lazyimage src="images/rack-space.jpg" caption=" " >}}
