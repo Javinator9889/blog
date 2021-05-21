@@ -55,7 +55,7 @@ Antes de realizar ninguna operación sobre nuestro vehículo es recomendable cum
 | 2 | Estación de soldadura | Opcional, pero altamente recomendado | https://s.javinator9889.com/00kQHR |
 | 3 | Tubo termoretráctil | Necesario | https://s.javinator9889.com/7rSrJW |
 | 4 | Terminal de empalme | Opcional - depende de conexionado a intermitentes | https://s.javinator9889.com/xhwbaw |
-| 5 | Cable termoresistente | Necesario | https://s.javinator9889.com/6kD10d |
+| 5 | Cable termorresistente | Necesario | https://s.javinator9889.com/6kD10d |
 | 6 | Terminales de cobre | Necesario | https://s.javinator9889.com/KXb6qv |
 | 7 | Conectores en 'T' | Necesario | https://s.javinator9889.com/a47hvq |
 | 8 | *Add-A-Circuit* fusibles | Necesario - identificar el tamaño de los fusibles |  - Perfil bajo: https://s.javinator9889.com/BXRm59<br> - Perfil alto: https://s.javinator9889.com/NHMwdz |
@@ -188,7 +188,7 @@ Para ello, usando el [**pelacables**](https://s.javinator9889.com/fkLRzg) sugeri
 
 A continuación recubrimos los cables con [**tres cubiertas protectoras**](https://s.javinator9889.com/7rSrJW) de plástico aislante, ya que después no podremos añadirlo:
 
-{{< lazyimage src="images/cable-wrapper.jpg" caption="Plástico aislante termoretractil alrededor de los cables. Por cada polo (negativo y positivo) usaremos un plástico aislante para asegurarnos de que no se suelta la conexión. Con el plástico grande mantenemos las dos conexiones juntas y organizadas." >}}
+{{< lazyimage src="images/cable-wrapper.jpg" caption="Plástico aislante termoretráctil alrededor de los cables. Por cada polo (negativo y positivo) usaremos un plástico aislante para asegurarnos de que no se suelta la conexión. Con el plástico grande mantenemos las dos conexiones juntas y organizadas." >}}
 
 Del [**hilo de cobre resistente a altas temperaturas**](https://s.javinator9889.com/6kD10d) cortamos una sección *suficientemente larga* para cubrir toda la conexión del vehículo. Para ello es necesario irse al motor del coche y medir aproximadamente cuánto cable necesitamos para que vaya desde el frontal del parachoques hasta el cuadro de fusibles, localizado al lado del volante del conductor. Para este caso en particular, usar unos **2.5 m** de cable será suficiente.
 
@@ -237,3 +237,18 @@ A la zona se puede acceder desde arriba, donde está el propio motor y el radiad
 y en su interior presenta un gran hueco donde se pueden situar cables e incluso aprovechar los ya existentes para unirlos y que se mantengan fijos (para evitar movimientos durante la marcha):
 
 {{< lazyimage src="images/rack-space.jpg" caption=" " >}}
+
+## 3.3. Preparación de la unión con los intermitentes (opcional)
+Si queremos que las luces DRL reaccionen ante la activación de los intermitentes hace falta unir al [cable de cobre termorresistente](https://s.javinator9889.com/6kD10d) los pines amarillos que hemos dejado antes sueltos. Al igual que en la vez anterior, primero añadimos un [plástico termoretráctil](https://s.javinator9889.com/7rSrJW) (de color amarillo preferiblemente) alrededor de la conexión:
+
+{{< lazyimage src="images/signal-cable.jpg" caption="Tubo termoretráctil sobre el cable termorresistente. Para la posterior conexión con los intermitentes, es recomendable usar entre 50~60 cm. de cable." >}}
+
+Al igual que antes, empalmamos los cables atándolos entre sí y aplicamos una gota de estaño para soldarlos y asegurarnos una gran conectividad:
+
+{{< lazyimage src="images/signal-soldered.jpg" caption=" " >}}
+
+Cerramos la unión con el plástico termoretráctil aplicando calor con un mechero y, fundamental, verificamos el correcto funcionamiento tanto de la luz como del indicador de intermitentes (para encender los intermitentes basta con conectar la señal (amarillo) al positivo de 12V):
+
+{{< youtube id="GCQIZ3nZIz8" title="Prueba de los DRL con el conexionado a intermitentes realizado." >}}
+
+Finalmente volvemos a repetir todo el proceso con la otra luz que queda pendiente.
