@@ -59,19 +59,20 @@ Antes de realizar ninguna operación sobre nuestro vehículo es recomendable cum
 | 6 | Terminales de cobre | Necesario | https://s.javinator9889.com/KXb6qv |
 | 7 | Conectores en 'T' | Necesario | https://s.javinator9889.com/a47hvq |
 | 8 | *Add-A-Circuit* fusibles | Necesario - identificar el tamaño de los fusibles |  - Perfil bajo: https://s.javinator9889.com/BXRm59<br> - Perfil alto: https://s.javinator9889.com/NHMwdz |
-| 9 | Decodificador/resistencia LED | Necesario | https://s.javinator9889.com/b7l74p |
-| 10 | Luces DRL impermeables | Necesario | https://s.javinator9889.com/ZzyPeN |
+| 9 | Pelacables automático | Opcional, pero altamente recomendado | https://s.javinator9889.com/fkLRzg |
+| 10 | Decodificador/resistencia LED | Necesario | https://s.javinator9889.com/b7l74p |
+| 11 | Luces DRL impermeables | Necesario | https://s.javinator9889.com/ZzyPeN |
 
 **Materiales para realizar pruebas - opcional pero altamente recomendado:**
 
 |   |   |   |   |
 |:-:|:-:|:-:|:-:|
-| 11 | Porta pilas | Opcional | https://s.javinator9889.com/C9XJLm |
-| 12 | Interruptores | Opcional | https://s.javinator9889.com/T6oqMZ |
-| 13 | Placas PCB | Opcional - alternativa: protoboard (14) | https://s.javinator9889.com/uBGU63 |
-| 14 | Protoboard | Opcional - alternativa: placas PCB (13) | https://s.javinator9889.com/Xtp0AE |
-| 15 | Pines "de paso" de corriente | Opcional | https://s.javinator9889.com/gMjx58 |
-| 16 | Pilas "AA" | Opcional | https://s.javinator9889.com/NbqA4Z |
+| 12 | Porta pilas | Opcional | https://s.javinator9889.com/C9XJLm |
+| 13 | Interruptores | Opcional | https://s.javinator9889.com/T6oqMZ |
+| 14 | Placas PCB | Opcional - alternativa: protoboard (14) | https://s.javinator9889.com/uBGU63 |
+| 15 | Protoboard | Opcional - alternativa: placas PCB (13) | https://s.javinator9889.com/Xtp0AE |
+| 16 | Pines "de paso" de corriente | Opcional | https://s.javinator9889.com/gMjx58 |
+| 17 | Pilas "AA" | Opcional | https://s.javinator9889.com/NbqA4Z |
 
 A lo largo de la entrada se irán detallando para qué son cada uno de los elementos anteriores y su utilidad. Se deriva al lector la responsabilidad de evaluar si un elemento opcional es necesario o no.
 
@@ -154,4 +155,21 @@ Con todo esto establecido, el circuito final queda de la siguiente forma:
 #### Circuito de pruebas (opcional)
 Si bien este paso es opcional, es altamente recomendado usar un circuito de pruebas para ir verificando que las conexiones se han realizado correctamente (y no comprometer la integridad de la batería del coche). El circuito que vamos a usar es muy simple:
 
+{{< lazyimage src="images/test-graph.png" caption="Modelado del circuito de pruebas. Las dos baterías en serie proveen de $12V$." >}}
+
+Es importante añadir el *switch* de encendido y apagado para poder probar el circuito varias veces sin gastar batería. El LED represente la luz DRL que se quiera conectar, como se muestra en el diagrama esquemático:
+
+{{< lazyimage src="images/test-sketch.png" caption="Diagrama esquemático del circuito de pruebas." >}}
+
+El circuito de pruebas queda de esta forma:
+
+{{< lazyimage src="images/test-circuit.png" caption="Circuito de pruebas sobre una placa PCB." width=500 >}}
+
+Para usarlo, basta con conectar los terminales positivo (rojo) y negativo (negro) a los pines correspondientes siguiendo el código de color o bien fijándonos en el diagrama.
+
 ## Consideraciones de seguridad
+Aunque no se va a trabajar con alta tensión, la batería del vehículo tiene mucha potencia que puede variar entre $4320~W \sim 9600~W$ con intensidades de entre $400~A$ hasta $1000~A$, suficientes para resultar fatales. Por ello, aunque no es necesario es **altamente recomendable** usar un circuito de pruebas controlado para evitar exponernos a dicha corriente.
+
+De igual manera, habrán puntos de la entrada en donde se indicará que se **debe desconectar la batería**. Aunque en apariencia pueda sonar peligroso si se toman las precauciones adecuadas no lo es, y nos dará seguridad cuando manipulemos cables o hagamos conexiones.
+
+Finalmente, hay que tener **especial precaución** al conectar el circuito de pruebas. Si por un casual cerramos el circuito accidentalmente se sufre un alto riesgo de incendio. Asegurarse de que las conexiones de las baterías son correctas antes de encender nada (por eso, entre otros motivos, hay un interruptor).
