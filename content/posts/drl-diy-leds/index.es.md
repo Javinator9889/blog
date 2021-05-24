@@ -267,4 +267,16 @@ Fijamos la luz en la posición que queramos (idealmente lo más pegada a los ext
 
 Si **hacemos la instalación con intermitentes** es muy importante que la **orientación sea la adecuada**: en este caso, los intermitentes de los DRL no parpadean sino que hacen un efecto de desplazamiento. Por legislación, el sentido de dicho efecto debe ser acorde con el sentido del desplazamiento, para evitar la confusión (recordemos que los DRL son un elemento de seguridad pasiva).
 
+Por otra parte, hay que tener en cuenta que la luz emitida por los DRL **es direccional**. Esto se traduce en que serán *altamente visibles* si el observador se encuentra directamente orientado a las luces. Por ello, es muy recomendable que las luces DRL estén orientadas **hacia arriba** de forma que otros vehículos y usuarios de la vía puedan verlas con mayor facilidad:
+
+{{< lazyimage src="images/DRL-sideview.png" caption="Elevación desde la vista lateral. Como las luces son direccionales, situarlas enfocando un punto **superior** al que se encuentran incrementa su visibilidad." >}}
+
+Finalmente, para cumplir con la legislación vigente, **es necesario** que las luces DRL estén, como mucho, desviadas 10º con respecto al sentido de la circulación del vehículo. Si no se cumple con esta regla las luces **no son aptas para la circulación** y nos pueden multar.
+
+{{< lazyimage src="images/straight-lights.png" caption="Orientación de las luces con respecto al sentido de la marcha. Un ángulo superior a 10º impediría la circulación del vehículo." >}}
+
+Por esto es fundamental escoger adecuadamente la posición y la orientación de las luces ya que, en otro caso, **no darán visibilidad al vehículo** y pueden **ser ilegales**, lo que conlleva la correspondiente sanción. Así, las luces en el coche quedarían:
+
 {{< lazyimage src="images/drl-front-mounted.jpg" caption="Luces DRL montadas en la rejilla inferior." >}}
+
+## 3.5. Interconexionado de las luces DRL
