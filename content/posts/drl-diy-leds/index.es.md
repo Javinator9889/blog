@@ -319,3 +319,44 @@ Sin más dilación, desconectamos el borne negativo de la batería y lo apoyamos
 {{< lazyimage src="images/battery-disconnect.jpg" caption=" " >}}
 
 {{< lazyimage src="images/battery-disconnected.jpg" caption=" " >}}
+
+## 3.7. Conexión con los intermitentes (opcional)
+Si queremos que las luces reaccionen ante la activación de los intermitentes es necesario hacer un "puente" en la conexión. Sin embargo, para no dañar las conexiones ya existentes del vehículo se hará uso de un [**terminal de empalme**](https://s.javinator9889.com/xhwbaw).
+
+Por otra parte, como vamos a modificar el circuito de los intermitentes es necesario añadir una *resistencia* (o decodificador CANBus) en dicha conexión, en caso de que nuestro vehículo cuente con dicha tecnología. Esto evitará que aparezcan errores **en el cuadro de mandos** debido a una menor intensidad. Se puede identificar fácilmente si un vehículo necesita de dicho decodificador si las luces conectadas **no son sencillamente un alambre** sino que son grandes y alargadas, como las siguientes:
+
+{{< lazyimage src="images/canbus-leds.jpg" caption="Luces LED que usan CANBus. Si no contasen CANBus serían más pequeñas y finas." >}}
+
+El conexionado de la resistencia/decodificador es simple: en el hueco del intermitente desconectamos el cable de la bombilla y añadimos el decodificador de por medio, haciendo las veces de puente:
+
+{{< lazyimage src="images/led-decoder.png" caption="Decodificador LED para CANBus. A la izquierda en gris, los conectores de las bombillas. En el centro, los conectores que van a los cables originales." >}}
+
+> **Nota:** es fundamental identificar previamente tanto **el tipo de conexión con cable** como el tipo de **conexión de bombilla** que tiene nuestro vehículo, ya que de un modelo a otro puede cambiar. Basta para ello con desmontar la luz y verificar qué conexionado usa.
+
+Cuando hemos identificado los terminales, se realiza la conexión:
+
+{{< lazyimage src="images/decoder-on.jpg" caption=" " >}}
+
+Para añadir el terminal de empalme, se realizan los siguientes pasos:
+ 1. Se pasa **el cable rojo** del decodificador por el hueco libre (sin final) del terminal.
+ 2. El cable que **viene desde la luz DRL** se pela el extremo (para mayor conductividad) y se introduce por el terminal libre. Es importante identificar que este terminal **tiene un tope al final** que mantiene el cable en su sitio.
+ 3. Con unos alicates, hacemos presión **sobre la pinza metálica** hasta que esté completamente insertada. Los cables ya estarán empalmados.
+ 4. Cerramos la **presilla de plástico** y la conexión está realizada.
+
+Igualmente, se deja un vídeo a continuación que muestra dicho proceso:
+
+{{< youtube id="JWlsEoNWDqM" title="Conexionado a intermitentes" >}}
+
+<br />
+
+{{< lazyimage src="images/blinker-connected.jpg" caption="Terminal de empalme ya conectado al intermitente." >}}
+
+Finalmente, al igual que en el paso [3.5.](#35-interconexionado-de-las-luces-drl), aunque la unión **ya sea impermeable** añadimos cinta aislante alrededor para proteger todavía más los cables:
+
+{{< lazyimage src="images/blinker-secured.jpg" caption="Terminal de empalme protegida con cinta aislante para evitar que entre agua." >}}
+
+Si *sobrase cable*, lo agrupamos con una [**brida**](https://s.javinator9889.com/vycCso) y lo fijamos o bien a otro cable o bien al chasis:
+
+{{< lazyimage src="images/blinker-cable-excess.jpg" caption=" " >}}
+
+> Se sitúa el decodificador en una **posición segura** (donde no se mueva demasiado) y **repetimos los pasos con el otro intermitente**.
