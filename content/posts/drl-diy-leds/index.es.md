@@ -307,4 +307,15 @@ Por otra parte, como puede que haya cable que sobre lo agrupamos con unas [**bri
 {{< lazyimage src="images/fixed-2.jpg" caption="Unión del cable sobrante al propio circuito del coche." >}}
 
 ## 3.6. Desconexión de la batería
-De ahora en adelante, los pasos que vamos a realizar **afectan directamente al circuito del coche** y debemos desconectar la batería.
+De ahora en adelante, los pasos que vamos a realizar **afectan directamente al circuito del coche** y debemos desconectar la batería. Antes de hacerlo, es necesario cumplir con las siguientes medidas:
+
+ 1. Contar con bien **unas zapatillas/botas con suela aislante** o usar unos **guantes de latex** al manipular las conexiones. En principio, unas zapatillas normales son aislantes pero, en caso de dudas, usar unos guantes: no queremos convertirnos nosotros en la conexión a tierra cuando desconectemos el cable.
+ 2. Observar y ver la **herramienta a usar**: los bornes de las baterías suelen estar fijos con una abrazadera que se suelta aflojando una tuerca. Identificar el diámetro de la misma y escoger la herramienta adecuada.
+ 3. Localizar algún **sitio seguro** donde dejar el conector. Como vamos a estar manipulando continuamente es mejor buscar un sitio donde apoyar el conector de forma que **ninguna parte metálica haga contacto** y podamos trabajar cómodamente.
+ 4. **NUNCA** tocar el polo positivo de la batería. Por lo general viene recubierto en plástico, así que por algo será... En un paso posterior será necesario usarlo pero lo haremos tomando unas precauciones especiales.
+
+Sin más dilación, desconectamos el borne negativo de la batería y lo apoyamos en un lugar seguro:
+
+{{< lazyimage src="images/battery-disconnect.jpg" caption=" " >}}
+
+{{< lazyimage src="images/battery-disconnected.jpg" caption=" " >}}
