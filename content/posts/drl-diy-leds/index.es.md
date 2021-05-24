@@ -280,3 +280,31 @@ Por esto es fundamental escoger adecuadamente la posición y la orientación de 
 {{< lazyimage src="images/drl-front-mounted.jpg" caption="Luces DRL montadas en la rejilla inferior." >}}
 
 ## 3.5. Interconexionado de las luces DRL
+Con todos los pasos anteriores estamos listos para **comenzar el conexionado** de las luces. En este caso, vamos a conectar el DRL izquierdo con el derecho. Recordar que es necesario dejar bastante cable de sobra para poder *realizar los montajes del circuito* y *añadir una conexión* en la toma de fusibles del conductor.
+
+Para realizar el conexionado vamos a usar los [**conectores en 'T'**](https://s.javinator9889.com/a47hvq) que permiten interconectar un par de cables con otro par sin necesidad de realizar ninguna soldadura. Para ello, los cables "sin cortar" se pasan por los dos orificios superiores (la '—' de la T) y el otro par de **cables pelados por el extremo** se introducen en los orificios inferiores (la '|' de la T), quedando el conexionado de la siguiente manera:
+
+{{< lazyimage src="images/drl-joint.png" caption="Diagrama del conexionado de los cables en una unión en 'T'." >}}
+
+Es importante **verificar en la serigrafía** que el conexionado es el correcto, ya que según el modelo puede cambiar:
+
+{{< lazyimage src="images/drl-joint-zoom.png" caption="Conexionado de este conector en 'T'. Se puede apreciar cómo los cables quedarían unidos entre sí según la firma que aparece en el conector de plástico." >}}
+
+Una vez nos hemos asegurado cómo se conectan los cables, pasamos a realizar el cortocircuito de ambas luces DRL:
+
+{{< lazyimage src="images/drl-connections.jpg" caption=" " >}}
+
+Aunque el **conector en 'T'** en principio es **resistente al agua**, como medida extra de seguridad añadimos cinta adhesiva alrededor de los cables y los terminales:
+
+{{< lazyimage src="images/secured-connections.jpg" caption="Protección de los terminales con cinta adhesiva. Opcional pero altamente recomendable." >}}
+
+Finalmente, es muy probable que haya **exceso de cable**. Para que no esté colgando y pueda moverse y dañar el vehículo, vamos a fijarlo a la chapa, en el compartimento interior que hemos visto antes:
+
+{{< lazyimage src="images/fixed-1.jpg" caption="Unión de la conexión en 'T' a la carrocería del vehículo." >}}
+
+Por otra parte, como puede que haya cable que sobre lo agrupamos con unas [**bridas**](https://s.javinator9889.com/vycCso) y podemos aprovechar la circuitería del propio coche para mantenerlas fijas:
+
+{{< lazyimage src="images/fixed-2.jpg" caption="Unión del cable sobrante al propio circuito del coche." >}}
+
+## 3.6. Desconexión de la batería
+De ahora en adelante, los pasos que vamos a realizar **afectan directamente al circuito del coche** y debemos desconectar la batería.
