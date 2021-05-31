@@ -383,3 +383,32 @@ En este caso, un terminal de tierra válido se localiza *al lado de la batería*
 Como tenemos el cable de tierra "a pelo", hace falta usar [**terminales de conexión**](https://s.javinator9889.com/KXb6qv) en donde el **extremo del cable** se pela, se introduce por el interior y se aprieta con unos alicates. Es importante asegurarse de **cortar el cable sobrante** y que el extremo **toque directamente** con el recubrimiento de los terminales. Aseguramos la conexión y tenemos las luces conectadas a tierra:
 
 {{< lazyimage src="images/ground-connected.jpg" caption="Terminal de tierra conectado a las luces DLR." >}}
+
+## 3.9. Atravesando el *firewall*
+Uno de los pasos críticos en el proyecto es el de llevar la conexión **desde el motor** hasta donde **el asiento del conductor**, donde realizaremos la conexión. Si nos fijamos en el habitáculo donde se encuentra el motor, no hay conexión aparente hacia el interior. Sin embargo, el poder encender las luces o activar diversos elementos eléctricos localizados en el exterior nos informan de que **sí se pueden pasar cables**.
+
+Fijándonos en **la pared del coche**, podemos ver **un trozo de goma** donde un gran cable la atraviesa. Eso es el *firewall*, que permite realizar conexiones desde el capó hasta donde el conductor. Es un elemento muy interesante si queremos *añadir un nuevo claxon* al vehículo o bien luces auxiliares, como vamos a hacer.
+
+Sin embargo, por seguridad, vamos a trabajar desde **dentro del vehículo**. Necesitamos acceder desde los pedales del conductor hacia el muro que separa el motor del habitáculo interior, y localizar **en la parte superior** el trozo de goma que es el *firewall*:
+
+{{< lazyimage src="images/firewall-interior.jpg" caption="Vista interior del *firewall* del vehículo, localizado encima de los pedales." width=500 >}}
+
+Si no estamos seguros de si lo hemos localizado correctamente, a continuación tenéis un vídeo en donde se muestra:
+
+{{< youtube id="8FjMFXXToRM?start=81" title="Car firewall" >}}
+
+La idea es ahora, **con un destornillador**, atravesar el *firewall* desde el interior y localizar la punta desde el exterior. Es importante fijarse en el **tacto que sentimos**: la resistencia de la pared debe ser **sólida** y firme, necesitando hacer fuerza para atravesarla. Si notamos que está flojo o se mueve muy posiblemente estaremos tocando cables, por lo que habrá que buscar otra posición y volver a intentarlo.
+
+{{< lazyimage src="images/broken-firewall.jpg" caption=" " >}}
+
+Pasar el cable **no es sencillo** usando directamente el agujero, ya que es posible que haya una doble pared. Sin embargo, aprovechando el destornillador y el orificio hecho, podemos pasar **una pajita resistente** desde un lado al otro, contando con un canal para poder pasar el cable:
+
+{{< lazyimage src="images/straw-exterior.jpg" caption="Pajita que sirve de canal, desde el motor." >}}
+
+{{< lazyimage src="images/straw-interior.jpg" caption="Pajita que sirve de canal, desde los pedales del conductor." >}}
+
+Ahora solo queda **pasar el cable** de conexión a través de la pajita y recogerlo en el interior:
+
+{{< lazyimage src="images/cable-through-firewall.jpg" caption="Conexionado hacia el interior a través del *firewall*." >}}
+
+> **Nota:** todavía *no quitamos la pajita* para tener una mayor y mejor movilidad en los pasos siguientes.
