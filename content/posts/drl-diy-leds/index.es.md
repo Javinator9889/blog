@@ -412,3 +412,18 @@ Ahora solo queda **pasar el cable** de conexión a través de la pajita y recoge
 {{< lazyimage src="images/cable-through-firewall.jpg" caption="Conexionado hacia el interior a través del *firewall*." >}}
 
 > **Nota:** todavía *no quitamos la pajita* para tener una mayor y mejor movilidad en los pasos siguientes.
+
+## 3.10. Conexionado final
+Ya llegamos al último paso, la conexión última del circuito. Como ya tenemos el cable en el lado del conductor, vamos a realizar la conexión al **cuadro de fusibles**, como teníamos previsto. Antes de empezar, es importante localizar dónde están los fusibles en el coche. Por lo general, van a estar en el **lateral izquierdo** en la zona del conductor y lo podremos identificar porque hay una caja de este estilo:
+
+{{< lazyimage src="images/fuses-outside.jpg" caption="Caja de acceso a los fusibles." >}}
+
+Sacando la cubierta protectora, podemos ver cómo están distribuídos los fusibles en el vehículo:
+
+{{< lazyimage src="images/fuses-distribution.jpg" caption="Distribución de los fusibles dentro del cuadro de fusibles." >}}
+
+Para este caso vamos a usar la conexión del fusible del **mechero**, ya que es uno de los "no esenciales" que no afectan directamente a elementos de seguridad activa del coche. Podemos identificarlo fácilmente siguiendo la tabla de distribución anterior por el fusible con nombre "**CIG**" (del inglés, *cigarette*). En este caso, el fusible se localiza en la **posición número 9** del cuadro de fusibles principal (fijarse en que en la distribución de fusibles aparece una imagen donde se muestra qué forma tiene el cuadro de fusibles principal y secundario).
+
+En este caso, el fusible a identificar es de $15A$ y está en la hilera de la izquierda:
+
+{{< lazyimage src="images/fuses.jpg" caption="Fusibles del vehículo." >}}
