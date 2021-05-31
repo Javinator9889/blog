@@ -360,3 +360,26 @@ Si *sobrase cable*, lo agrupamos con una [**brida**](https://s.javinator9889.com
 {{< lazyimage src="images/blinker-cable-excess.jpg" caption=" " >}}
 
 > Se sitúa el decodificador en una **posición segura** (donde no se mueva demasiado) y **repetimos los pasos con el otro intermitente**.
+
+## 3.8. Conexión del terminal de tierra
+Con las **primeras conexiones ya realizadas** debemos *cerrar el circuito* conectando el cable negro a una toma de tierra del motor del vehículo. Para esta operación nos vamos a apoyar en un [**multímetro**](https://s.javinator9889.com/znqgtn), herramienta ideal para detectar tensión, corriente y resistencia de un circuito. Si no contamos con uno, en principio **cualquier punto metálico del chásis** actúa como toma de tierra, pero de esta forma nos aseguramos de ello.
+
+Lo primero que habrá que hacer será comprobar *el conexionado* del circuito, ya que queremos ver si por una parte **no está conectado con la toma positiva** y que sí es un **punto de tierra o masa**.
+
+> **PRECAUCIÓN: SE VA A TRABAJAR DIRECTAMENTE CON EL POLO POSITIVO DE LA BATERÍA. EXTREMAR EL CUIDADO AL MANIPULAR LOS CABLES Y LAS CONEXIONES**
+
+Para esta tarea, haremos uso de un multímetro en el modo de medición de conectividad. Dicho modo se puede localizar porque aparece un icono de un altavoz 🔊 y, cuando hacemos contacto de los terminales del multímetro, emite un sonido:
+
+{{< lazyimage src="images/continuity.jpg" caption="Modo de prueba de conectividad de un multímetro." >}}
+
+La idea es: conectar uno de los terminales del multímetro al **borne positivo de la batería** y el otro en una parte metálica del motor. Si emite un sonido, **no es válido** ya que quiere decir que hay conexión con el positivo. Si no suena, realizamos la misma operación **con el borne negativo** y está vez sí que debe emitir un sonido, indicando que el punto escogido es en efecto **una toma de tierra**. Si bien es cierto que estas comprobaciones no son del todo necesarias (ya que por lo general los puntos metálicos del coche son tierra) sí que es una idea interesante asegurarse de que se escoge el lugar adecuado.
+
+{{< lazyimage src="images/check-connection.jpg" caption=" " >}}
+
+En este caso, un terminal de tierra válido se localiza *al lado de la batería* y es un tornillo metálico que se usa como **toma auxiliar de tierra**:
+
+{{< lazyimage src="images/ground-point.jpg" caption="Toma auxiliar de tierra del vehículo." >}}
+
+Como tenemos el cable de tierra "a pelo", hace falta usar [**terminales de conexión**](https://s.javinator9889.com/KXb6qv) en donde el **extremo del cable** se pela, se introduce por el interior y se aprieta con unos alicates. Es importante asegurarse de **cortar el cable sobrante** y que el extremo **toque directamente** con el recubrimiento de los terminales. Aseguramos la conexión y tenemos las luces conectadas a tierra:
+
+{{< lazyimage src="images/ground-connected.jpg" caption="Terminal de tierra conectado a las luces DLR." >}}
