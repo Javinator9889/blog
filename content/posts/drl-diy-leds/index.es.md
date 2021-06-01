@@ -472,4 +472,32 @@ Finalmente, pero no menos importante, **quedará probar al fin el circuito que h
 
 {{< lazyimage src="images/led-decoder-turn.png" caption="Si los intermitentes no se encienden cuando los accionamos, con dar la vuelta al conector basta (está conectado a tierra)." >}}
 
+Si esto tampoco da resultado, es posible que la presilla que hemos usado para hacer el puente desde el intermitente hacia la luz **no esté haciendo contacto correctamente**. Esto suele deberse a que no se ha apretado la unión metálica con suficiente fuerza, por lo que bastaría con hacer una muesca un poco más grande apretando nuevamente con unos alicates (se sugiere igualmente quitar la presilla, hacer a mano la muesca un poco mayor y terminar de cerrar el circuito con los alicates).
+
 Cuando hayamos comprobado que **todo funciona como debe**, ¡hemos terminado! 🥳
+
+# 4. Resultado final
+{{< youtube id="bhU07rSb6To" title="Demostración del resultado final." >}}
+
+Como se puede ver, las luces quedan de fábula y **cumplen con la homologación europea**, por lo que son válidas para circular. Este artículo se finaliza de escribir unas dos semanas después del montaje, y hasta entonces se destacan los siguientes puntos:
+
+ + La visibilidad es **asombrosa**: el resto de vehículos pueden verte con mucha más facilidad y a más distancia.
+ + La instalación **no ha dado ningún fallo**: las luces funcionan tal como si estuvieran integradas de fábrica.
+ + En los días muy soleados las luces **pierden efectividad**, en particular los intermitentes (son 10 LEDs frente a los 20 blancos diurnos). Las luces siguen siendo visibles pero no tanto como la de otros vehículos. Sin embargo, es cierto que en días especialmente solados estas luces no son tan necesarias ya que, pues eso, está especialmente soleado.
+ + La instalación es completamente **resistente al agua** - en una gran tormenta que hubo en Madrid el otro día las luces otorgaron al vehículo de una gran visibilidad y **salieron intactas** del aguacero.
+
+ {{< tweet 1399455406888472576 >}}
+
+Por lo general, **estoy muy satisfecho con el resultado**. Y tú, ¿te animas a hacerlo? Estaré encantado de poder ayudarte si lo necesitas. 
+
+He intentado que el blog fuese lo más descriptivo posible para guiar a alguien paso a paso si quisiera iniciar este proyecto por sí mismo así que espero que haya sido de utilidad.
+
+
+Para cualquier duda o comentario (todo es bienvenido), usa la caja de comentarios que aparecen justo debajo y házmelo saber 😉.
+
+* * * 
+Lecturas recomendadas:
+
+| {{< lazyimage src="images/termius.png" width=250 >}} | {{< lazyimage src="images/Android-10-Easter-Egg.jpg" width=250 >}} | {{< lazyimage src="images/thumbnail.png" width=250 >}} |
+|:--:|----|----|
+| [Termius PPA: #1 SSH platform app](/termius-ppa/) |  [Instalar Android 10 (Q) en el Mi A1](/instalar-android-10-mi-a1/)  |  [DDNS for GoDaddy](/ddns-for-godaddy-howto/)  |
