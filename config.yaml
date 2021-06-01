@@ -5,12 +5,15 @@ title: 'Javinator9889 - Blog'
 description: The Official Blog of the Javinator9889's web page
 paginate: 5
 theme: PaperMod
+timeout: 60000
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+ignoreErrors: ["error-remote-getjson"]
 
 # googleAnalytics: UA-125520964-2
 
@@ -166,6 +169,26 @@ markup:
         lineNos: true
         # noClasses: false
         style: fruity
+    goldmark:
+      extensions:
+        definitionList: true
+        footnote: true
+        linkify: true
+        strikethrough: true
+        table: true
+        taskList: true
+        typographer: true
+        katex: true
+      parser:
+        attribute:
+          block: false
+          title: true
+        autoHeadingID: true
+        autoHeadingIDType: github
+      renderer:
+        hardWraps: false
+        unsafe: true
+        xhtml: false
 
 privacy:
     vimeo:
