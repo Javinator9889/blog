@@ -428,4 +428,48 @@ En este caso, el fusible a identificar es de $15A$ y está en la hilera de la iz
 
 {{< lazyimage src="images/fuses.jpg" caption="Fusibles del vehículo." >}}
 
+Para sacar los fusibles es necesario utilizar una **herramienta de extracción de fusibles**, que vendrá con el **kit para añadir fusibles**. Dicha herramienta con forma de pinza se sitúa alrededor del *slot* donde está el fusible y permite su extracción y colocación:
+
+{{< lazyimage src="images/fuse-extractor.jpg" caption="Pinza de extracción de fusibles." >}}
+
+Una vez extraído el fusible debemos situarlo en un lugar seguro, ya que lo usaremos más tarde. Por otro lado, podremos saber si nuestro coche utiliza fusibles de perfil bajo o de perfil medio, como es este caso. Se puede saber fácilmente por la longitud de las patas, ya que los nuevos y habituales son de **perfil bajo** y los más "antiguos" (pero los más comunes) son los *mini*:
+
+{{< lazyimage src="images/fuse.jpg" caption=" " >}}
+
+En la página de RS-Components hay una descripción y [guía detallada](https://uk.rs-online.com/web/generalDisplay.html?id=ideas-and-advice/car-fuses-guide) sobre los distintos tipos de fusible que podemos encontrar en un coche. Es fundamental usar los componentes adecuados ya que otros no serán compatibles con nuestra instalación eléctrica:
+
+{{< lazyimage src="images/car_fuses_image.jpg" caption="Distintos tipos de fusibles usados en coches. Fuente: [RS Components Ltd.](https://uk.rs-online.com/web/generalDisplay.html?id=ideas-and-advice/car-fuses-guide)" >}}
+
+Ahora, con el **cable de expansión** de fusibles, situamos el *fusible antiguo* de $15A$ en el *slot* libre y un fusible de entre $1A$ y $3A$ en el otro *slot*. La ubicación es importante ya que uno servirá para el circuito original y el otro para el nuevo. Con esto en mente, el fusible de $1/3A$ para el nuevo circuito irá situado **encima del cable** de unión y el fusible original en el hueco libre que quede:
+
+{{< lazyimage src="images/add-a-circuit.jpg" caption="Fusibles situados sobre la unión final. El fusible original $(15A)$ va situado en el hueco \"libre\". El nuevo fusible $(3A)$ se sitúa encima del cable." >}}
+
+Con las conexiones ya aseguradas, pasamos a mover el cable de conexión **por detrás del cuadro de mandos** y por **encima de los pedales** para sacarlo por el hueco de la caja de fusibles, ya que no debe quedar cable colgando por la zona de los pies. Una vez lo hemos extraído por allí, **cortamos el exceso de cable** de forma que nos sea sencillo trabajar pero no haya cable de más:
+
+{{< lazyimage src="images/cut-excess-fuse.jpg" caption=" " >}}
+
+Usando los **terminales** que vienen con el circuito de extensión de fusibles, **pelamos el extremo del cable** y lo aseguramos dentro del conector con unos alicates:
+
+{{< lazyimage src="images/connection-end-connector.jpg" caption=" " >}}
+
+Cuando hemos comprobado que el conector no se mueve, **unimos los terminales** entre sí y encapsulamos la conexión con la protección de plástico que viene. Si no tuviésemos, se puede usar otro plástico termoretráctil para asegurar la conexión final:
+
+{{< lazyimage src="images/final-connection.jpg" caption=" " >}}
+
+Finalmente, lo último que queda ya es **conectar el fusible** en la caja de fusibles *en la posición que hemos dejado libre* (no usar ninguna otra conexión que estuviera vacía ya que puede estar destinada a otro circuito o no funcionar):
+
+{{< lazyimage src="images/fuse-connected1.jpg" caption="Conexión del circuito expansor de fusibles en la caja de fusibles del vehículo, usando el hueco que hemos dejado libre." width=500 >}}
+
+Si, por un casual, **todavía quedase cable colgando** (ya que el conector es largo) podemos moverlo hacia el conductor con la intención de que no quede **nada visible** pero, más importante, nada que **pueda molestarnos cuando conducimos** (es muy peligroso que podamos pisar el cable mientras estamos pisando los pedales):
+
+{{< lazyimage src="images/fuse-connected2.jpg" caption="Cable extensor de circuitos junto con el resto de elementos electrónicos del vehículo debidamente separado para evitar problemas de seguridad." width=500 >}}
+
+Finalmente, pero no menos importante, **quedará probar al fin el circuito que hemos montado**. Aquí tenéis el vídeo del primer encendido:
+
 {{< youtube id="ji5CJwJd5UM" title="Encendido inicial de los DRL" >}}
+
+😱🥳😱🥳😱🥳 Las luces se ven increíbles, **pero no reaccionan frente a los intermitentes**. ¡NO PREOCUPARSE! Lo más posible es que las hayamos conectado al **negativo** de los intermitentes, por lo que dando la vuelta a la conexión del decodificador **se soluciona el problema**:
+
+{{< lazyimage src="images/led-decoder-turn.png" caption="Si los intermitentes no se encienden cuando los accionamos, con dar la vuelta al conector basta (está conectado a tierra)." >}}
+
+Cuando hayamos comprobado que **todo funciona como debe**, ¡hemos terminado! 🥳
