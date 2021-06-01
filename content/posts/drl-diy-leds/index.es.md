@@ -18,7 +18,6 @@ tags:
   - diurnas
   - machine
   - mecánica
-draft: true
 katex: true
 
 ---
