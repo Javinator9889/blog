@@ -427,3 +427,5 @@ Para este caso vamos a usar la conexión del fusible del **mechero**, ya que es 
 En este caso, el fusible a identificar es de $15A$ y está en la hilera de la izquierda:
 
 {{< lazyimage src="images/fuses.jpg" caption="Fusibles del vehículo." >}}
+
+{{< youtube id="ji5CJwJd5UM" title="Encendido inicial de los DRL" >}}
