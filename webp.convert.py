@@ -107,7 +107,8 @@ def sub_with_webp(
 
 
 def delete_old_files(files: FrozenSet[Path]):
-    map(lambda f: f.unlink(), files)
+    for file in files:
+        file.unlink()
 
 
 def main():
@@ -122,12 +123,12 @@ def main():
 
     with Pool(initializer=initp, initargs=(pb1, pb2)) as p:
         print(f"> Converting all found files ({len(files)}) to WebP...")
-        files = c2webp(files, p)
+        files_tup = c2webp(files, p)
 
         pb1.done()
 
         print("> Using WebP images instead of PNG or JPG...")
-        sub_with_webp(files, p, pb2)
+        sub_with_webp(files_tup, p, pb2)
         pb2.done()
 
         print("> Removing old images to save space...", end="\n\n")
