@@ -5,6 +5,7 @@ title: 'Javinator9889 - Blog'
 description: The Official Blog of the Javinator9889's web page
 paginate: 5
 theme: PaperMod
+timeout: 60000
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
