@@ -6,7 +6,8 @@ trigger:
   - azure-pipelines
   - dev
 
-pool: "Default"
+pool:
+  vmImage: "ubuntu-latest"
 
 variables:
   hugo.version: '0.83.1'
