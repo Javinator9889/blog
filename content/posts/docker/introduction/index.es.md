@@ -18,38 +18,29 @@ tags:
 
 > Esta entrada es parte de un conjunto de entradas extraídas directamente
 del artículo ya escrito que versa sobre este tema, el cual es completamente
-accesible y se puede leer en la siguiente dirección:
+accesible y se puede leer en la siguiente dirección: https://s.javinator9889.com/rg-docker
 
 ------------------------------------------------------------------------
+
 
 La era tecnológica ha avanzado en los últimos años a pasos agigantados,
 y las demandas del sector han crecido junto a ella. No hace más de 200
 años se "descubría" la electricidad; hace 90 años nacía la primera
 computadora básica capaz de realizar operaciones aritméticas; hace 70
-años nacía el transistor que sustituyó las válvulas de vacío (figura
-[1](#fig:transistor){reference-type="ref" reference="fig:transistor"});
-y desde entonces, el crecimiento ha sido exponencial
-[@HistoryTechnologyTimeline].
+años nacía el transistor que sustituyó las válvulas de vacío
+y desde entonces, el crecimiento ha sido exponencial.
 
-![Comparativa de una válvula de vacío (izquierda) frente a un transistor
-(centro) y un circuito integrado
-(derecha).[]{label="fig:transistor"}](pictures/transistor-vs-valve.jpg){#fig:transistor
-width=".7\linewidth"}
+{{< lazyimage src="images/transistor-vs-valve.jpg" caption="Comparativa de una válvula de vacío (izquierda) frente a un transistor (centro) y un circuito integrado (derecha)." >}}
 
 Otro de los ejemplos de tecnologías que han crecido exponencialmente son
 los dispositivos de almacenamiento, donde no hacía más de 20 años las
-capacidades máximas se estimaban en torno a los MB (megabytes) y ahora
-se hablan de EB (exabytes) [@EvolutionDataStorage]. Esta evolución es
+capacidades máximas se estimaban en torno a los MB (_megabytes_) y ahora
+se hablan de EB (_exabytes_). Esta evolución es
 muy representativa también a nivel económico, ya que el coste del
 almacenamiento ha ido bajando a medida pasaba el tiempo, así como el
-espacio físico que ocupan los dispositivos (figura
-[2](#fig:disk-evolution){reference-type="ref"
-reference="fig:disk-evolution"}):
+espacio físico que ocupan los dispositivos:
 
-![Evolución del espacio de almacenamiento en términos económicos y
-cuantitativos
-[@wecomputingtechStorageDevicesLondon].[]{label="fig:disk-evolution"}](pictures/disk-evo.jpg){#fig:disk-evolution
-width=".65\linewidth"}
+{{< lazyimage src="images/disk-evo.jpg" caption="Evolución del espacio de almacenamiento en términos económicos y cuantitativos. Fuente: [WeComputingTech](http://www.wecomputing.com/blog/tag/storage-devices-london/)" >}}
 
 Finalmente, el gran salto tecnológico se ha producido con la aparición
 de Internet y las comunicaciones ya no eran únicamente personales sino
@@ -60,13 +51,9 @@ servidores distribuidos a nivel mundial al cual accede, de forma
 simultánea, desde Internet y desde cualquier dispositivo. Así, lo que
 comenzó como una red de conexión de unos pocos usuarios ha acabado
 convirtiéndose en la red global que todos usamos y que conecta más de 4
-billones de dispositivos (figura
-[3](#fig:internet-evo){reference-type="ref"
-reference="fig:internet-evo"}).
+billones de dispositivos:
 
-![Evolución de Internet a lo largo del tiempo, hasta llegar a hoy
-[@HowBecomeWeb].[]{label="fig:internet-evo"}](pictures/internet-timeline.png){#fig:internet-evo
-width=".9\linewidth"}
+{{< lazyimage src="images/internet-timeline.png" caption="Evolución de Internet a lo largo del tiempo, hasta llegar a hoy. Fuente: [CareerFoundry](https://careerfoundry.com/en/blog/web-development/what-does-it-take-to-become-a-web-developer-everything-you-need-to-know-before-getting-started/)" >}}
 
 El problema a esto es evidente: con una mayor capacidad de cómputo, con
 más opciones de comunicación y con más posibilidad de almacenar datos,
@@ -83,8 +70,8 @@ distinto.
 Por otra parte, la extensión de dependencias y posible incompatibilidad
 entre ellas suele desembocar en el uso de versiones desactualizadas de
 una librería ya que tendríamos "paquetes rotos". Esto es tan común que
-tiene hasta su propio término coloquial "*dependency hell*"
-[@DependencyHell2021]. Contar con dependencias obsoletas que ya han
+tiene hasta su propio término coloquial "*dependency hell*". 
+Contar con dependencias obsoletas que ya han
 cumplido con su ciclo de vida *software* conlleva unas implicaciones de
 seguridad bastante severas:
 
@@ -108,7 +95,7 @@ seguridad bastante severas:
     versión antigua e insegura del *software* compromete directamente al
     sistema y a la aplicación.
 
-Es por eso que existen alternativas como "`chroot`" y máquinas virtuales
+Es por eso que existen alternativas como `chroot` y máquinas virtuales
 para subsanar estos problemas. Sin embargo, en los últimos años ha
 aparecido una herramienta muy sonada y con gran éxito: Docker y los
 contenedores.
@@ -117,7 +104,7 @@ contenedores.
 ---------------
 
 Docker es una plataforma abierta diseñada para el desarrollo, despliegue
-y ejecución de aplicaciones [@DockerOverview2021]. La idea fundamental
+y ejecución de aplicaciones. La idea fundamental
 que reside detrás de Docker es la de separar la infraestructura de las
 aplicaciones de manera que se pueda entregar el *software* rápidamente.
 
@@ -131,8 +118,8 @@ cuestión. La pregunta que surge es, ¿qué es un contenedor?
 
 Un contenedor es una unidad estándar *software* que empaqueta código y
 todas sus dependencias de manera que la aplicación se ejecuta
-rápidamente y de forma fiable bajo múltiples entornos de ejecución
-[@WhatContainerApp]. Una imagen Docker es un paquete ligero,
+rápidamente y de forma fiable bajo múltiples entornos de ejecución. 
+Una imagen Docker es un paquete ligero,
 independiente y ejecutable que incluye absolutamente todo lo necesario
 para poder ejecutar una aplicación: desde el código en sí hasta el
 *runtime*, herramientas del sistema, librerías y configuraciones.
@@ -145,17 +132,12 @@ Al fin y al cabo, los contenedores nos aseguran que una aplicación que
 hemos desarrollado se va a ejecutar de la misma manera en una máquina u
 otra. El uso del motor Docker permite ejecutar múltiples contenedores
 sobre un mismo anfitrión sin añadir demasiada carga en el sistema e
-indiferentemente de la infraestructura que exista por debajo (figura
-[4](#fig:docker-containers-rt){reference-type="ref"
-reference="fig:docker-containers-rt"}):
+indiferentemente de la infraestructura que exista por debajo:
 
-![Distribución de los contenedores sobre el motor de ejecución de Docker
-[@WhatContainerApp].[]{label="fig:docker-containers-rt"}](pictures/container-what-is-container.png){#fig:docker-containers-rt
-width=".7\linewidth"}
+{{< lazyimage src="images/container-what-is-container.png" caption="Distribución de los contenedores sobre el motor de ejecución de Docker. Fuente: [Docker](https://www.docker.com/resources/what-container)" >}}
 
-La distribución de los contenedores mostrada en la figura
-[4](#fig:docker-containers-rt){reference-type="ref"
-reference="fig:docker-containers-rt"} puede parecerse mucho a la
+La distribución de los contenedores mostrada en la figura anterior
+puede parecerse mucho a la
 distribución que tendríamos en una máquina virtual. Sin embargo, hay
 varias características que lo distinguen principalmente:
 
@@ -175,13 +157,9 @@ varias características que lo distinguen principalmente:
     con el de una máquina virtual, que engloba y encapsula un sistema
     operativo al completo.
 
-![Capas de abstracción de una máquina virtual sobre una máquina
-anfitriona
-[@WhatContainerApp].[]{label="fig:vm-layers"}](pictures/container-vm-whatcontainer_2.png){#fig:vm-layers
-width=".7\linewidth"}
+{{< lazyimage src="images/container-vm-whatcontainer_2.png" caption="Capas de abstracción de una máquina virtual sobre una máquina anfitriona. Fuente: [Docker](https://www.docker.com/resources/what-container)" >}}
 
-En la figura [5](#fig:vm-layers){reference-type="ref"
-reference="fig:vm-layers"} se puede apreciar cómo una máquina virtual
+En la figura anterior se puede apreciar cómo una máquina virtual
 añade muchas más capas de abstracción que ralentizan el rendimiento. Sin
 embargo, esto no quiere decir que sean una mala alternativa: la realidad
 es que se combinan las dos para obtener una gran flexibilidad para
@@ -202,9 +180,7 @@ permitiendo que aplicaciones distintas de Docker hagan uso de la
 arquitectura basada en contenedores aprovechando la OCI: *Open Container
 Initiative*
 
-![Entorno de ejecución de *containerd* basado en `runC` de la OCI
-[@Containerd].[]{label="fig:containerd-arch"}](pictures/containerd-arch.png){#fig:containerd-arch
-width=".7\linewidth"}
+{{< lazyimage src="images/containerd-arch.png" caption="Entorno de ejecución de *containerd* basado en `runC` de la OCI. Fuente: [Containerd](https://containerd.io/)" >}}
 
 ### Docker Engine {#docker-engine .unnumbered}
 

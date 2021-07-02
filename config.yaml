@@ -4,7 +4,9 @@ name: 'Javinator9889 - Blog'
 title: 'Javinator9889 - Blog'
 description: The Official Blog of the Javinator9889's web page
 paginate: 5
-theme: PaperMod
+theme: 
+ - PaperMod
+ - hugo-cite
 timeout: 60000
 
 enableInlineShortcodes: true

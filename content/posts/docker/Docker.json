@@ -1,0 +1,1460 @@
+[
+	{
+		"id": "EmpoweringAppDevelopment",
+		"type": "webpage",
+		"abstract": "Learn how Docker helps developers bring their ideas to life by conquering the complexity of app development.",
+		"language": "en",
+		"title": "Empowering App Development for Developers | Docker",
+		"URL": "https://www.docker.com/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "erikgregersenHistoryTechnologyTimeline2017",
+		"type": "webpage",
+		"abstract": "Learn more about the history of technology from the first tools to the space age to the computer age.",
+		"container-title": "Encyclopedia Britannica",
+		"language": "en",
+		"title": "History of Technology Timeline",
+		"URL": "https://www.britannica.com/story/history-of-technology-timeline",
+		"author": [
+			{
+				"literal": "Erik Gregersen"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "EvolutionDataStorage",
+		"type": "webpage",
+		"abstract": "Everybody stores data. We often take the devices that store our data for granted, as they have become so inexpensive and efficient. But we’ve come a long way from the early days of computing. Take a look at 14 of the most important devices in the history of data storage.",
+		"container-title": "The Gateway",
+		"title": "Evolution of Data Storage Timeline",
+		"URL": "/gateway/data-storage-timeline/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "EvolutionDataStoragea",
+		"type": "webpage",
+		"abstract": "Feb 8, 2016 - This Pin was discovered by Heather Coates. Discover (and save!) your own Pins on Pinterest",
+		"container-title": "Pinterest",
+		"language": "es",
+		"title": "evolution of data storage | Data storage, Data, Evolution",
+		"URL": "https://www.pinterest.com/pin/80994493271887313/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "wecomputingtechStorageDevicesLondon",
+		"type": "post-weblog",
+		"language": "en-US",
+		"title": "storage devices london | We Computing Blog",
+		"URL": "http://www.wecomputing.com/blog/tag/storage-devices-london/",
+		"author": [
+			{
+				"literal": "WeComputingTech"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "HowBecomeWeb",
+		"type": "webpage",
+		"abstract": "Wondering how to become a web developer in 2021 and land a well-paid job? Discover the necessary skills, qualifications and tools you'll need in this compreh...",
+		"language": "en",
+		"title": "How To Become A Web Developer in 2021 — Everything You Need To Know",
+		"URL": "https://careerfoundry.com/en/blog/web-development/what-does-it-take-to-become-a-web-developer-everything-you-need-to-know-before-getting-started/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "DependencyHell2021",
+		"type": "entry-encyclopedia",
+		"abstract": "Dependency hell is a colloquial term for the frustration of some software users who have installed software packages which have dependencies on specific versions of other software packages.The dependency issue arises when several packages have dependencies on the same shared packages or libraries, but they depend on different and incompatible versions of the shared packages. If the shared package or library can only be installed in a single version, the user may need to address the problem by obtaining newer or older versions of the dependent packages. This, in turn, may break other dependencies and push the problem to another set of packages.",
+		"container-title": "Wikipedia",
+		"language": "en",
+		"note": "Page Version ID: 1025704309",
+		"source": "Wikipedia",
+		"title": "Dependency hell",
+		"URL": "https://en.wikipedia.org/w/index.php?title=Dependency_hell&oldid=1025704309",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					29
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerOverview2021",
+		"type": "webpage",
+		"abstract": "Docker explained in depth",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Docker overview",
+		"URL": "https://docs.docker.com/get-started/overview/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "WhatContainerApp",
+		"type": "webpage",
+		"abstract": "A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Learn more.",
+		"language": "en",
+		"title": "What is a Container? | App Containerization | Docker",
+		"title-short": "What is a Container?",
+		"URL": "https://www.docker.com/resources/what-container",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "ContainerRuntimeDocker",
+		"type": "webpage",
+		"abstract": "Learn about Docker Engine, the industry-leading container runtime that enables containerized applications to run anywhere consistently on any infrastructure.",
+		"language": "en",
+		"title": "Container Runtime with Docker Engine | Docker",
+		"URL": "https://www.docker.com/products/container-runtime",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Containerd",
+		"type": "webpage",
+		"abstract": "An industry-standard container runtime with an emphasis on simplicity, robustness, and portability",
+		"language": "en-us",
+		"title": "containerd",
+		"URL": "https://containerd.io/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "yegulalpWhatDockerSpark2019",
+		"type": "webpage",
+		"abstract": "Docker helps developers build lightweight and portable software containers that simplify application development, testing, and deployment",
+		"container-title": "InfoWorld",
+		"language": "en",
+		"title": "What is Docker? The spark for the container revolution",
+		"title-short": "What is Docker?",
+		"URL": "https://www.infoworld.com/article/3204171/what-is-docker-the-spark-for-the-container-revolution.html",
+		"author": [
+			{
+				"family": "Yegulalp",
+				"given": "Serdar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					4,
+					19
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerDesktopWSL2021",
+		"type": "webpage",
+		"abstract": "Docker Desktop WSL 2 backend",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Docker Desktop WSL 2 backend",
+		"URL": "https://docs.docker.com/docker-for-windows/wsl/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "kulshresthaDockerNetworkingExplore2020",
+		"type": "webpage",
+		"abstract": "This article on Docker Networking will introduce you to concepts such as Container Network Model & Network Drivers with a Hands-On.",
+		"container-title": "Medium",
+		"language": "en",
+		"title": "Docker Networking — Explore How Containers Communicate With Each Other",
+		"URL": "https://medium.com/edureka/docker-networking-1a7d65e89013",
+		"author": [
+			{
+				"family": "Kulshrestha",
+				"given": "Saurabh"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					9,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "ContainerAdoptionStatistics",
+		"type": "webpage",
+		"abstract": "Learn about 2020 container adoption statistics and trends from 263 tech leaders in a report conducted by Forrester Consulting on behalf of Capital One.",
+		"container-title": "Capital One",
+		"language": "en",
+		"title": "Container Adoption Statistics: The Future of the Container Market",
+		"title-short": "Container Adoption Statistics",
+		"URL": "https://www.capitalone.com/tech/cloud/container-adoption-statistics/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "wattsStateContainersToday",
+		"type": "webpage",
+		"container-title": "BMC Blogs",
+		"language": "en-US",
+		"title": "The State of Containers Today: A Report Summary",
+		"title-short": "The State of Containers Today",
+		"URL": "https://www.bmc.com/blogs/state-of-containers/",
+		"author": [
+			{
+				"family": "Watts",
+				"given": "Stephen"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "ContainerAdoptionTrends",
+		"type": "webpage",
+		"abstract": "Here are today’s top 6 container adoption trends that we uncovered in our latest State of Container and Kubernetes Security survey report.",
+		"container-title": "StackRox: Kubernetes and container security solution",
+		"language": "en",
+		"title": "6 Container Adoption Trends of 2020",
+		"URL": "https://www.stackrox.com/post/2020/03/6-container-adoption-trends-of-2020/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "Download2018Docker2018",
+		"type": "webpage",
+		"abstract": "Our 2nd annual Docker Usage Report provides insight into real-world customer container deployments over the past year. Read about increasing densities",
+		"container-title": "Sysdig",
+		"language": "en-US",
+		"title": "Download the 2018 Docker Usage Report",
+		"URL": "https://sysdig.com/blog/2018-docker-usage-report/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					5,
+					29
+				]
+			]
+		}
+	},
+	{
+		"id": "UseVolumes2021",
+		"type": "webpage",
+		"abstract": "Using volumes",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Use volumes",
+		"URL": "https://docs.docker.com/storage/volumes/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "ManageDataDocker2021",
+		"type": "webpage",
+		"abstract": "Overview of persisting data in containers",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Manage data in Docker",
+		"URL": "https://docs.docker.com/storage/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "UnionFS2020",
+		"type": "entry-encyclopedia",
+		"abstract": "UnionFS es un servicio para sistemas de archivos de Linux que permite montar un sistema de archivos formado por la unión de otros sistemas de archivos de Linux. Permite que archivos y directorios de sistemas de archivos distintos, conocidos como ramas, se superpongan de forma transparente, formando un único sistema de archivos. Los contenidos de directorios que tienen la misma ruta en las ramas que se combinan aparecerán juntos en un único directorio en el nuevo sistema de archivos virtual.\nUnionFS se utiliza principalmente en LiveCD o sistemas sin disco, donde el directorio raíz de solo lectura se combina con un sistema de archivos tmpfs (que reside en memoria y es modificable). De este modo, todos los archivos de la raíz de solo lectura pueden ser modificados, y la modificación se mantiene en memoria.\nLas diferentes ramas pueden ser sistemas de archivos de solo lectura o lectura y escritura, de forma que las escrituras al sistema de archivos virtual combinado pueden realizarse sobre un sistema de archivos real concreto. Esto lleva a otro útil propósito de las uniones de sistemas de archivos, que es hacer que un sistema de archivos parezca modificable, pero sin permitir realmente que las escrituras modifiquen el sistema de archivos, también conocido como copia en escritura. Esto puede ser deseable cuando el medio es físicamente de solo lectura, como en el caso de los CD-ROMs, o para utilizar una única plantilla común para varios sistemas de archivos, o quizás por razones de seguridad. La implementación de Linux, UnionFS, se utiliza algunas veces como un sistema de imágenes (snapshot) ad hoc.\nA la hora de montar ramas, la prioridad de una rama sobre otra es especificada. De este modo, cuando ambas ramas contienen un archivo con el mismo nombre, uno tiene prioridad sobre el otro.\nEn los LiveCDs se utiliza para superponer un sistema de archivos modificable sobre un medio de solo lectura. En Knoppix por ejemplo la unión del sistema de archivos en el CD-ROM o DVD puede hacerse con el sistema de archivos contenido en una imagen llamada knoppix.img en una memoria USB que tenga prioridad sobre el sistema de archivos de solo lectura. El usuario ve un sistema de archivos en el que es posible añadir y cambiar archivos en cualquier sitio. Lo que ocurre en el nivel físico es que si un archivo pertenece a la rama de solo lectura es reemplazada con una nueva versión que se almacena en el archivo de imagen. Dado que el sistema de archivos de unión combina las dos ramas de forma transparente, el usuario simplemente ve la nueva versión.",
+		"container-title": "Wikipedia, la enciclopedia libre",
+		"language": "es",
+		"note": "Page Version ID: 127421790",
+		"source": "Wikipedia",
+		"title": "UnionFS",
+		"URL": "https://es.wikipedia.org/w/index.php?title=UnionFS&oldid=127421790",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					7,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "UseBindMounts2021",
+		"type": "webpage",
+		"abstract": "Using bind mounts",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Use bind mounts",
+		"URL": "https://docs.docker.com/storage/bind-mounts/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "NetworkingOverview2021",
+		"type": "webpage",
+		"abstract": "Overview of Docker networks and networking concepts",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Networking overview",
+		"URL": "https://docs.docker.com/network/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerSoftware2021",
+		"type": "entry-encyclopedia",
+		"abstract": "Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels. Because all of the containers share the services of a single operating system kernel, they use fewer resources than virtual machines.The service has both free and premium tiers. The software that hosts the containers is called Docker Engine. It was first started in 2013 and is developed by Docker, Inc.",
+		"container-title": "Wikipedia",
+		"language": "en",
+		"note": "Page Version ID: 1027143347",
+		"source": "Wikipedia",
+		"title": "Docker (software)",
+		"URL": "https://en.wikipedia.org/w/index.php?title=Docker_(software)&oldid=1027143347",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerSecurity2021",
+		"type": "webpage",
+		"abstract": "Review of the Docker Daemon attack surface",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Docker security",
+		"URL": "https://docs.docker.com/engine/security/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerfileReference2021",
+		"type": "webpage",
+		"abstract": "Dockerfiles use a simple DSL which allows you to automate the steps you would normally manually take to create an image.",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Dockerfile reference",
+		"URL": "https://docs.docker.com/engine/reference/builder/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "jethvaHowDockerfileWorks",
+		"type": "post-weblog",
+		"abstract": "Dockerfile is a simple text file that contains all the commands user could call on the command line to assemble or build an image. After creating a dockerfile, you can use it over and over to build the same image without manually installing all required packages for your development process. In this article, how to build a docker image with Dockerfile is explained.",
+		"language": "en-US",
+		"title": "How Dockerfile Works? – Linux Hint",
+		"title-short": "How Dockerfile Works?",
+		"URL": "https://linuxhint.com/dockerfile_beginner_guide/",
+		"author": [
+			{
+				"family": "Jethva",
+				"given": "Hitesh"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "BestPracticesWriting2021",
+		"type": "webpage",
+		"abstract": "Hints, tips and guidelines for writing clean, reliable Dockerfiles",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Best practices for writing Dockerfiles",
+		"URL": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "donohueHowCommunicateDocker2020",
+		"type": "webpage",
+		"abstract": "Understand how a Docker container can talk to its container friends, by setting up a network. Includes a real example.",
+		"container-title": "Tutorial Works",
+		"language": "en",
+		"title": "How To Communicate Between Docker Containers",
+		"URL": "https://www.tutorialworks.com/container-networking/",
+		"author": [
+			{
+				"family": "Donohue",
+				"given": "Tom"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerNetworkConnect2021",
+		"type": "webpage",
+		"abstract": "docker network connect: Connects a container to a network. You can connect a container by name or by ID. Once connected, the container can communicate with other containers in the...",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "docker network connect",
+		"URL": "https://docs.docker.com/engine/reference/commandline/network_connect/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "LegacyContainerLinks2021",
+		"type": "webpage",
+		"abstract": "Learn how to connect Docker containers together.",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Legacy container links",
+		"URL": "https://docs.docker.com/network/links/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "OverviewDockerCompose2021",
+		"type": "webpage",
+		"abstract": "Introduction and Overview of Compose",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Overview of Docker Compose",
+		"URL": "https://docs.docker.com/compose/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerComposeTutorial",
+		"type": "webpage",
+		"abstract": "Docker Compose is an advanced Docker tool that simplifies your workflow. In this article, we will show you how to get started with Docker Compose and its popular commands.",
+		"container-title": "Educative: Interactive Courses for Software Developers",
+		"language": "en",
+		"title": "Docker Compose Tutorial: advanced Docker made simple",
+		"title-short": "Docker Compose Tutorial",
+		"URL": "https://www.educative.io/blog/docker-compose-tutorial",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "ComoInstalarWordPress",
+		"type": "webpage",
+		"abstract": "WordPress es un sistema de administración de contenido (CMS) gratuito y de código abierto que se desarrolla sobre una base de datos de…",
+		"container-title": "DigitalOcean",
+		"language": "en",
+		"title": "Cómo instalar WordPress con Docker Compose",
+		"URL": "https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose-es",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "QueEsOrganizacion",
+		"type": "webpage",
+		"abstract": "La organización en contenedores automatiza la implementación, la gestión, la escalabilidad y la conexión en red de los contenedores.",
+		"language": "es",
+		"title": "¿Qué es la organización en contenedores?",
+		"URL": "https://www.redhat.com/es/topics/containers/what-is-container-orchestration",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "ContainerOrchestration",
+		"type": "webpage",
+		"abstract": "Container orchestration is the automation of much of the operational effort required to run containerized workloads and services.",
+		"container-title": "VMware",
+		"language": "en",
+		"title": "Container Orchestration",
+		"URL": "https://www.vmware.com/topics/glossary/content/container-orchestration",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "KubernetesNumbers2020",
+		"type": "webpage",
+		"abstract": "How is Kubernetes impacting enterprise IT? Let's unpack a dozen (and then some) numbers that speak to Kubernetes' continuing rise to IT ascendancy",
+		"language": "en",
+		"title": "Kubernetes by the numbers, in 2020: 12 stats to see",
+		"title-short": "Kubernetes by the numbers, in 2020",
+		"URL": "https://enterprisersproject.com/article/2020/6/kubernetes-statistics-2020",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "WhatKubernetes",
+		"type": "webpage",
+		"abstract": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.",
+		"container-title": "Kubernetes",
+		"language": "en",
+		"note": "section: docs",
+		"title": "What is Kubernetes?",
+		"URL": "https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "ArchivoKubernetesLogo",
+		"type": "webpage",
+		"language": "es",
+		"title": "Archivo:Kubernetes logo.svg - Wikipedia, la enciclopedia libre",
+		"title-short": "Archivo",
+		"URL": "https://commons.wikimedia.org/wiki/File:Kubernetes_logo.svg",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "KubernetesComponents",
+		"type": "webpage",
+		"abstract": "A Kubernetes cluster consists of the components that represent the control plane and a set of machines called nodes.",
+		"container-title": "Kubernetes",
+		"language": "en",
+		"note": "section: docs",
+		"title": "Kubernetes Components",
+		"URL": "https://kubernetes.io/docs/concepts/overview/components/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "UseServiceAccess",
+		"type": "webpage",
+		"abstract": "This page shows how to create a Kubernetes Service object that external clients can use to access an application running in a cluster. The Service provides load balancing for an application that has two running instances.\nBefore you begin You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.",
+		"container-title": "Kubernetes",
+		"language": "en",
+		"note": "section: docs",
+		"title": "Use a Service to Access an Application in a Cluster",
+		"URL": "https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "Swarm",
+		"type": "webpage",
+		"title": "swarm",
+		"URL": "https://hub.docker.com/_/swarm",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerClassicswarm2021",
+		"type": "book",
+		"abstract": "Swarm Classic: a container clustering system. Not to be confused with Docker Swarm which is at https://github.com/docker/swarmkit",
+		"genre": "Go",
+		"note": "original-date: 2014-05-01T23:15:17Z",
+		"publisher": "Docker",
+		"source": "GitHub",
+		"title": "docker/classicswarm",
+		"URL": "https://github.com/docker/classicswarm",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerSwarmkit2021",
+		"type": "book",
+		"abstract": "A toolkit for orchestrating distributed systems at any scale. It includes primitives for node discovery, raft-based consensus, task scheduling and more.",
+		"genre": "Go",
+		"note": "original-date: 2016-02-12T00:02:15Z",
+		"publisher": "Docker",
+		"source": "GitHub",
+		"title": "docker/swarmkit",
+		"URL": "https://github.com/docker/swarmkit",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "SwarmModeOverview2021",
+		"type": "webpage",
+		"abstract": "Docker Engine swarm mode overview",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Swarm mode overview",
+		"URL": "https://docs.docker.com/engine/swarm/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "IndepthExplanationSwarm",
+		"type": "webpage",
+		"title": "In-depth explanation of Swarm - Programmer Sought",
+		"URL": "https://www.programmersought.com/article/9158256489/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "SwarmModeKey2021",
+		"type": "webpage",
+		"abstract": "Introducing key concepts for Docker Engine swarm mode",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Swarm mode key concepts",
+		"URL": "https://docs.docker.com/engine/swarm/key-concepts/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "DonPanicKubernetes2020",
+		"type": "webpage",
+		"abstract": "Authors: Jorge Castro, Duffie Cooley, Kat Cosgrove, Justin Garrison, Noah Kantrowitz, Bob Killen, Rey Lejano, Dan “POP” Papandrea, Jeffrey Sica, Davanum “Dims” Srinivas\nKubernetes is deprecating Docker as a container runtime after v1.20.\nYou do not need to panic. It’s not as dramatic as it sounds.\nTL;DR Docker as an underlying runtime is being deprecated in favor of runtimes that use the Container Runtime Interface (CRI) created for Kubernetes. Docker-produced images will continue to work in your cluster with all runtimes, as they always have.",
+		"container-title": "Kubernetes",
+		"language": "en",
+		"note": "section: blog",
+		"title": "Don't Panic: Kubernetes and Docker",
+		"title-short": "Don't Panic",
+		"URL": "https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "LinuxNamespaces2021",
+		"type": "entry-encyclopedia",
+		"abstract": "Namespaces are a feature of the Linux kernel that partitions kernel resources such that one set of processes sees one set of resources while another set of processes sees a different set of resources.  The feature works by having the same namespace for a set of resources and processes, but those namespaces refer to distinct resources.  Resources may exist in multiple spaces. Examples of such resources are process IDs, hostnames, user IDs, file names, and some names associated with network access, and interprocess communication.\nNamespaces are a fundamental aspect of containers on Linux.\nThe term \"namespace\" is often used for a type of namespace (e.g. process ID) as well as for a particular space of names.\nA Linux system starts out with a single namespace of each type, used by all processes.  Processes can create additional namespaces and join different namespaces.",
+		"container-title": "Wikipedia",
+		"language": "en",
+		"note": "Page Version ID: 1026275774",
+		"source": "Wikipedia",
+		"title": "Linux namespaces",
+		"URL": "https://en.wikipedia.org/w/index.php?title=Linux_namespaces&oldid=1026275774",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "Cgroups2021",
+		"type": "entry-encyclopedia",
+		"abstract": "cgroups (abbreviated from control groups) is a Linux kernel feature that limits, accounts for, and isolates the resource usage (CPU, memory, disk I/O, network, etc.) of a collection of processes.\nEngineers at Google (primarily Paul Menage and Rohit Seth) started the work on this feature in 2006 under the name \"process containers\". In late 2007, the nomenclature changed to \"control groups\" to avoid confusion caused by multiple meanings of the term \"container\" in the Linux kernel context, and the control groups functionality was merged into the Linux kernel mainline in kernel version 2.6.24, which was released in January 2008. Since then, developers have added many new features and controllers, such as support for kernfs in 2014, firewalling, and unified hierarchy. cgroup v2 was merged in Linux kernel 4.5 with significant changes to the interface and internal functionality.",
+		"container-title": "Wikipedia",
+		"language": "en",
+		"note": "Page Version ID: 1027879091",
+		"source": "Wikipedia",
+		"title": "cgroups",
+		"URL": "https://en.wikipedia.org/w/index.php?title=Cgroups&oldid=1027879091",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "OpenVZ2021",
+		"type": "entry-encyclopedia",
+		"abstract": "OpenVZ (Open Virtuozzo) is an operating-system-level virtualization technology for Linux. It allows a physical server to run multiple isolated operating system instances, called containers, virtual private servers (VPSs), or virtual environments (VEs). OpenVZ is similar to Solaris Containers and LXC.",
+		"container-title": "Wikipedia",
+		"language": "en",
+		"note": "Page Version ID: 998912714",
+		"source": "Wikipedia",
+		"title": "OpenVZ",
+		"URL": "https://en.wikipedia.org/w/index.php?title=OpenVZ&oldid=998912714",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "sunSecurityNamespaceMaking2018",
+		"type": "paper-conference",
+		"container-title": "27th USENIX security symposium (USENIX security 18)",
+		"event-place": "Baltimore, MD",
+		"ISBN": "978-1-939133-04-5",
+		"page": "1423–1439",
+		"publisher": "USENIX Association",
+		"publisher-place": "Baltimore, MD",
+		"title": "Security namespace: Making linux security frameworks available to containers",
+		"URL": "https://www.usenix.org/conference/usenixsecurity18/presentation/sun",
+		"author": [
+			{
+				"family": "Sun",
+				"given": "Yuqiong"
+			},
+			{
+				"family": "Safford",
+				"given": "David"
+			},
+			{
+				"family": "Zohar",
+				"given": "Mimi"
+			},
+			{
+				"family": "Pendarakis",
+				"given": "Dimitrios"
+			},
+			{
+				"family": "Gu",
+				"given": "Zhongshu"
+			},
+			{
+				"family": "Jaeger",
+				"given": "Trent"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "CapabilitiesLinuxManual",
+		"type": "webpage",
+		"title": "capabilities(7) - Linux manual page",
+		"URL": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		}
+	},
+	{
+		"id": "blogEvolvingContainerSecurity2021",
+		"type": "webpage",
+		"abstract": "By Fabio Kung, Sargun Dhillon, Andrew Spyker, Kyle, Rob Gulewich, Nabil Schear, Andrew Leung, Daniel Muino, and Manas Alekar",
+		"container-title": "Medium",
+		"language": "en",
+		"title": "Evolving Container Security With Linux User Namespaces",
+		"URL": "https://netflixtechblog.com/evolving-container-security-with-linux-user-namespaces-afbe3308c082",
+		"author": [
+			{
+				"family": "Blog",
+				"given": "Netflix Technology"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "DocumentationProcSys",
+		"type": "webpage",
+		"title": "Documentation for /proc/sys/fs/ — The Linux Kernel documentation",
+		"URL": "https://www.kernel.org/doc/html/latest/admin-guide/sysctl/fs.html#overflowgid-overflowuid",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		}
+	},
+	{
+		"id": "ContentTrustDocker2021",
+		"type": "webpage",
+		"abstract": "Enabling content trust in Docker",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Content trust in Docker",
+		"URL": "https://docs.docker.com/engine/security/trust/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "Grsecurity",
+		"type": "webpage",
+		"title": "grsecurity",
+		"URL": "https://grsecurity.net/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		}
+	},
+	{
+		"id": "PaX2019",
+		"type": "entry-encyclopedia",
+		"abstract": "En seguridad informática, PaX es un parche del núcleo Linux que implementa protecciones del mínimo privilegio para las páginas de memoria. La aproximación del mínimo privilegio permite a los programas realizar lo que tienen que hacer de modo que sean capaces de ejecutarlo adecuadamente, y no poder realizar nada más. La primera versión de PaX fue publicada en el año 2000.\nPaX marca los datos de memoria como no ejecutables, la memoria del programa como no escribible y organiza aleatoriamente la memoria del programa. Esto previene eficazmente muchos de los exploits, como algunos tipos de desbordamientos de buffers. Previene la ejecución de código directa, mientras que los ataques conocidos como return-to-libc (ret2libc) son más difícil de explotar, fiándose de la suerte del éxito, pero no previene de la sobrescritura de variables y punteros.\nEl equipo de PaX se encarga del mantenimiento de PaX, cuyo principal desarrollador es anónimo.",
+		"container-title": "Wikipedia, la enciclopedia libre",
+		"language": "es",
+		"note": "Page Version ID: 117622364",
+		"source": "Wikipedia",
+		"title": "PaX",
+		"URL": "https://es.wikipedia.org/w/index.php?title=PaX&oldid=117622364",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					7,
+					22
+				]
+			]
+		}
+	},
+	{
+		"id": "DockerIptables2021",
+		"type": "webpage",
+		"abstract": "The basics of how Docker works with iptables",
+		"container-title": "Docker Documentation",
+		"language": "en",
+		"title": "Docker and iptables",
+		"URL": "https://docs.docker.com/network/iptables/",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "buiAnalysisDockerSecurity2015",
+		"type": "article-journal",
+		"abstract": "Over the last few years, the use of virtualization technologies has increased dramatically. This makes the demand for efficient and secure virtualization solutions become more obvious. Container-based virtualization and hypervisor-based virtualization are two main types of virtualization technologies that have emerged to the market. Of these two classes, container-based virtualization is able to provide a more lightweight and efficient virtual environment, but not without security concerns. In this paper, we analyze the security level of Docker, a well-known representative of container-based approaches. The analysis considers two areas: (1) the internal security of Docker, and (2) how Docker interacts with the security features of the Linux kernel, such as SELinux and AppArmor, in order to harden the host system. Furthermore, the paper also discusses and identifies what could be done when using Docker to increase its level of security.",
+		"container-title": "arXiv:1501.02967 [cs]",
+		"note": "arXiv: 1501.02967",
+		"source": "arXiv.org",
+		"title": "Analysis of Docker Security",
+		"URL": "http://arxiv.org/abs/1501.02967",
+		"author": [
+			{
+				"family": "Bui",
+				"given": "Thanh"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					1,
+					13
+				]
+			]
+		}
+	}
+]
