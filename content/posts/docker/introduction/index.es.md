@@ -8,6 +8,7 @@ cover:
 categories:
   - Docker
 url: "docker/introduction"
+katex: true
 tags:
   - docker
   - linux
@@ -186,17 +187,13 @@ Initiative*
 
 El motor de ejecución de Docker establece la arquitectura de ejecución
 *de facto* que es utilizable desde distintas distribuciones Linux y
-servidores Windows [@ContainerRuntimeDocker].
+servidores Windows.
 
-![Arquitectura del entorno de ejecución de Docker
-[@ContainerRuntimeDocker].[]{label="fig:docker-engine"}](pictures/docker-engine.png){#fig:docker-engine
-width=".7\linewidth"}
+{{< lazyimage src="images/docker-engine.png" caption="Arquitectura del entorno de ejecución de Docker. Fuente: [Docker](https://www.docker.com/products/container-runtime)" >}}
 
 El motor de ejecución de Docker se compone de una gran cantidad de
 elementos que encapsulan de forma uniforme multitud de aptitudes de un
-sistema operativo o una aplicación (figura
-[7](#fig:docker-engine){reference-type="ref"
-reference="fig:docker-engine"}). Este entorno de ejecución sin embargo
+sistema operativo o una aplicación. Este entorno de ejecución sin embargo
 es complejo ya que engloba multitud de elementos físicos, como pueden
 ser las interfaces de red y los volúmenes.
 
@@ -206,9 +203,7 @@ realizar las comunicaciones que necesiten. Con el motor de ejecución de
 Docker se busca solventar esos problemas "*dependency hell*" que se han
 comentado anteriormente y la situación de "en mi equipo funciona".
 
-De los elementos mostrados en la figura
-[7](#fig:docker-engine){reference-type="ref"
-reference="fig:docker-engine"}, se tiene que son:
+De los elementos del motor Docker mostrados anteriormente, se tiene que son:
 
 -   *Distribution*: la distribución Linux en la que se basa el
     contenedor. Actualmente, Docker solo permite ejecutar contenedores
@@ -259,8 +254,7 @@ aplicaciones directas que ha encontrado en el mercado.
 Una de las principales ventajas que otorgó Docker desde su nacimiento
 fue el de aislar las aplicaciones entre sí y, por consiguiente, ofrecer
 un entorno de "caja de arena" (*sandbox*) en donde ejecutar nuestras
-aplicaciones (o aplicaciones inseguras) con cierta confianza
-[@yegulalpWhatDockerSpark2019].
+aplicaciones (o aplicaciones inseguras) con cierta confianza.
 
 Es cierto que esta característica ya estaba asentada con las máquinas
 virtuales, y funcionaba correctamente y de forma efectiva. Sin embargo,
@@ -287,7 +281,7 @@ ningún cambio e indiferentemente de la distribución.
 
 Con la llegada de WSL2, el kernel de Linux se introdujo al completo
 dentro de las máquinas Windows 10, permitiendo que Docker se pudiera
-ejecutar de "forma nativa"[@DockerDesktopWSL2021]. Con esto, la
+ejecutar de "forma nativa". Con esto, la
 limitación anterior se elimina y los contenedores diseñados para Linux
 funcionarán también en Windows.
 
@@ -344,13 +338,9 @@ Debido a las capas de aislamiento de Docker, esta comunicación no es
 sencilla: no sirve con comunicar dos direcciones IP. Sin embargo,
 utilizando un motor de Docker distribuído se pueden realizar las
 conexiones como si de una LAN se tratase, cuando en realidad se está
-usando una red *overlay*. Esto se muestra en la figura
-[8](#fig:docker-network){reference-type="ref"
-reference="fig:docker-network"}:
+usando una red *overlay*:
 
-![Comunicación entre contenedores usando el motor de Docker
-[@kulshresthaDockerNetworkingExplore2020].[]{label="fig:docker-network"}](pictures/docker-networking.png){#fig:docker-network
-width=".7\linewidth"}
+{{< lazyimage src="images/docker-networking.png" caption="Comunicación entre contenedores usando el motor de Docker. Fuente: [Medium](https://medium.com/edureka/docker-networking-1a7d65e89013)" >}}
 
 Con todas estas ideas en mente, es evidente que Docker ofrece soluciones
 fáciles y sencillas para escalar automáticamente aplicaciones alrededor
@@ -393,12 +383,11 @@ De entre los datos obtenidos, es destacable la adopción de contenedores
 en las empresas tecnológicas: un 87% de los encuestados (2019) afirman
 usar contenedores en comparación con el 55% registrado en 2017. Es más,
 el 90% de las aplicaciones que ejecutan en esos contenedores están en
-entornos de producción, una gran diferencia con 2018 (84%) y 2017 (67%)
-[@wattsStateContainersToday].
+entornos de producción, una gran diferencia con 2018 (84%) y 2017 (67%).
 
 Estos datos radican en la inversión económica que las empresas realizan
-en labores de "contenerización", invirtiendo entre $\$\numprint{500000}$
-y $\$\numprint{1000000}$ [@wattsStateContainersToday]. De entre todos
+en labores de "contenerización", invirtiendo entre $500000$
+y $1000000$ dólares. De entre todos
 los motivos que mueven a las empresas a realizar esas inversiones, prima
 la seguridad de los datos sobre los demás.
 
@@ -424,40 +413,33 @@ mucho la velocidad en el desarrollo y la eficiencia. Por otra parte, la
 portabilidad de los contenedores permite a las empresas poder mover sus
 entornos de producción y desarrollo entre una y otra plataforma de nube
 públicas, de entre las cuales las más usadas (12% de la muestra) son
-AWS, Azure y Google Cloud [@wattsStateContainersToday].
+AWS, Azure y Google Cloud.
 
 En particular, se observa cómo AWS (la plataforma de Amazon) es la
 dominante en este sector, llevándose el 78% del sector; la siguiente,
 Azure con el 39%; y finalmente, GCP (*Google Cloud Platform*) con el 35%
-y subiendo rápidamente [@ContainerAdoptionTrends]. Destaca el
+y subiendo rápidamente. Destaca el
 crecimiento de Google ya que es quien empezó a invertir mucho dinero en
 contenedores desde su nacimiento y el creador de Kubernetes, la
 tecnología de orquestación más usada a nivel mundial.
 
-![Uso de contenedores según la plataforma *cloud*
-[@ContainerAdoptionTrends].](pictures/containers-in-the-cloud.png){width=".5\linewidth"}
+{{< lazyimage src="images/containers-in-the-cloud.png" caption="Uso de contenedores según la plataforma *cloud*. Fuente: [StackRox](https://www.stackrox.com/post/2020/03/6-container-adoption-trends-of-2020/)" >}}
 
 La situación mencionada anteriormente se ve directamente reflejada en la
 "contenerización" de aplicaciones en según que plataforma. De los
 usuarios de Azure, solo el 20% ha creado un contenedor para más de la
 mitad de sus aplicaciones, significativamente más bajo que el 33% de los
 no usuarios. Esto se ve drásticamente reducido cuando se hablan de
-aplicaciones en entorno de producción [@ContainerAdoptionTrends].
+aplicaciones en entorno de producción.
 
 Por el contrario, casi un tercio de los usuarios de GCP (31%) han creado
 un contenedor para más de la mitad de sus aplicaciones, relativamente
 superior al 27% de los no usuarios. Este mismo efecto se produce con
-respecto a las aplicaciones en producción desplegadas en GCP
-[@ContainerAdoptionTrends].
+respecto a las aplicaciones en producción desplegadas en GCP.
 
-Esto se ve reflejado en el gráfico de la figura
-[9](#fig:contenerized-apps){reference-type="ref"
-reference="fig:contenerized-apps"}:
+Esto se ve reflejado en el siguiente gráfico:
 
-![Porcentaje de las aplicaciones desplegadas en contenedores en según
-qué plataformas
-[@ContainerAdoptionTrends].[]{label="fig:contenerized-apps"}](pictures/gcp-vs-azure.png){#fig:contenerized-apps
-width=".5\linewidth"}
+{{< lazyimage src="images/gcp-vs-azure.png" caption="Porcentaje de las aplicaciones desplegadas en contenedores en según qué plataformas. Fuente: [StackRox](https://www.stackrox.com/post/2020/03/6-container-adoption-trends-of-2020/)" >}}
 
 En un estudio más moderno, se estima en el año 2020 ha supuesto un mayor
 auge en las tecnologías de "contenerización", en donde los responsables
@@ -468,31 +450,21 @@ principal es cumplir con los requisitos legales, de rendimiento y
 regulatorios vigentes según las necesidades de la industria; y la
 portabilidad de las aplicaciones, las cuales estaban confinadas y
 diseñadas para sistemas en particular y ahora se quieren desplegar en la
-nube en general [@ContainerAdoptionStatistics].
+nube en general.
 
-Esto se ve en la infografía diseñada por Forrester (figura
-[10](#fig:container-stats){reference-type="ref"
-reference="fig:container-stats"}):
+Esto se ve en la infografía diseñada por Forrester:
 
-![Estadísticas de adopción de tecnologías basadas en contenedores en la
-nube, 2020
-[@ContainerAdoptionStatistics].[]{label="fig:container-stats"}](pictures/container-adoption-statistics-infographic.png){#fig:container-stats
-width=".85\linewidth"}
+{{< lazyimage src="images/container-adoption-statistics-infographic.png" caption="Estadísticas de adopción de tecnologías basadas en contenedores en la nube, 2020. Fuente: [Capital One](https://www.capitalone.com/tech/cloud/container-adoption-statistics/)" >}}
 
 De entre todos los datos anteriores, es destacable el gran uso de Docker
 y Kubernetes para gestionar toda esta infraestructura. En 2017, Docker
 representaba un 99% de los contenedores en uso. Sin embargo, con la
 compra de CoreOS por RedHat y el lanzamiento de la OCI ha promovido el
 nacimiento y establecimiento de nuevas tecnologías de contenedores que
-le han quitado cuota de mercado a Docker [@Download2018Docker2018].
-Actualmente, la distribución queda (figura
-[11](#fig:container-runtime){reference-type="ref"
-reference="fig:container-runtime"}):
+le han quitado cuota de mercado a Docker.
+Actualmente, la distribución queda:
 
-![Usos de tecnologías de contenedores: Docker domina, seguido por rkt y
-Mesos
-[@Download2018Docker2018].[]{label="fig:container-runtime"}](pictures/container-runtimes.png){#fig:container-runtime
-width="\linewidth"}
+{{< lazyimage src="images/container-runtimes.png" caption="Usos de tecnologías de contenedores: Docker domina, seguido por rkt y Mesos. Fuente: [sysdig](https://sysdig.com/blog/2018-docker-usage-report/)" >}}
 
 Todo esto nos lleva a ver que si bien aparecen alternativas nuevas
 Docker sigue siendo la tecnología dominante y la que más adopción está
