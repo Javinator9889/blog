@@ -1,5 +1,5 @@
 ---
-title: '1. Introducción a Docker - contexto'
+title: '1. Introducción completa a Docker'
 author: Javinator9889
 date: 2021-06-28T16:55:00+02:00
 series: ["Docker"]
@@ -17,11 +17,14 @@ tags:
   - qué es
 ---
 
-> Esta entrada es parte de un conjunto de entradas extraídas directamente
-del artículo ya escrito que versa sobre este tema, el cual es completamente
-accesible y se puede leer en la siguiente dirección: https://s.javinator9889.com/rg-docker
+> Esta entrada es parte de un conjunto de *posts* extraídos directamente
+  del artículo ya escrito que versa sobre este tema, el cual es completamente
+  accesible y se puede leer en la siguiente dirección: https://s.javinator9889.com/rg-docker
+>
+> Para un vistazo completo, detallado, con referencias y citas se recomienda
+  encarecidamente leer dicho artículo.
 
-------------------------------------------------------------------------
+* * *
 
 
 La era tecnológica ha avanzado en los últimos años a pasos agigantados,
@@ -44,7 +47,7 @@ espacio físico que ocupan los dispositivos:
 {{< lazyimage src="images/disk-evo.jpg" caption="Evolución del espacio de almacenamiento en términos económicos y cuantitativos. Fuente: [WeComputingTech](http://www.wecomputing.com/blog/tag/storage-devices-london/)" >}}
 
 Finalmente, el gran salto tecnológico se ha producido con la aparición
-de Internet y las comunicaciones ya no eran únicamente personales sino
+de Internet y cuando las comunicaciones ya no eran únicamente personales sino
 entre dispositivos. En relación con el punto anterior, la aparición de
 Internet ha permitido descentralizar el espacio donde ya el usuario no
 guarda su información en su equipo personal sino en un clúster de
@@ -56,7 +59,7 @@ billones de dispositivos:
 
 {{< lazyimage src="images/internet-timeline.png" caption="Evolución de Internet a lo largo del tiempo, hasta llegar a hoy. Fuente: [CareerFoundry](https://careerfoundry.com/en/blog/web-development/what-does-it-take-to-become-a-web-developer-everything-you-need-to-know-before-getting-started/)" >}}
 
-El problema a esto es evidente: con una mayor capacidad de cómputo, con
+El problema de esto es evidente: con una mayor capacidad de cómputo, con
 más opciones de comunicación y con más posibilidad de almacenar datos,
 los requisitos de las aplicaciones van creciendo y creciendo y cada vez
 son más complejos de satisfacer, no necesariamente a nivel *hardware*
@@ -474,3 +477,10 @@ evolucionar, seguir avanzando y mejorando. Lo interesante no es ya usar
 Docker, rtk o LXC sino que se ha establecido un estándar de contenedores
 abierto (OCI) y que pone las bases a lo que es una tecnología
 revolucionaria.
+
+* * * 
+Lecturas recomendadas:
+
+| {{< lazyimage src="images/leds-cover.png" width=135 >}} | {{< lazyimage src="images/Android-10-Easter-Egg.jpg" width=250 >}} | {{< lazyimage src="images/termius.png" width=250 >}} |
+|:--:|----|----|
+| [Luces diurnas reversibles para cualquier coche](/drl-daylight-leds/) |  [Instalar Android 10 (Q) en el Mi A1](/instalar-android-10-mi-a1/)  |  [Termius: #1 SSH platform PPA](/termius-ppa/)  |
