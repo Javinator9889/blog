@@ -4,7 +4,7 @@ author: Javinator9889
 date: 2021-06-28T16:55:00+02:00
 series: ["Docker"]
 cover:
-  image: images/cover.png
+  image: images/Docker-Logo.png
 categories:
   - Docker
 url: "docker/introduction"
