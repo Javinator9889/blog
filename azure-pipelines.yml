@@ -35,9 +35,6 @@ jobs:
       - script: 'sudo npm install -g postcss-cli'
         displayName: "[NPM] Install PostCSS for managing CSS files"
 
-      - script: 'npm install'
-        displayName: "[NPM] Install required PostCSS plugins"
-
       - script: 'pip3 install tqdm'
         displayName: "[Python] Install required dependencies"
 
