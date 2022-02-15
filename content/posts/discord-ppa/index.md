@@ -44,15 +44,23 @@ sudo -E gpg --no-default-keyring --keyring=/usr/share/keyrings/javinator9889-ppa
 Then, add the repository to your `sources.list` as follows:
  + For the **stable** version, use the `all` distribution.
  + For the **beta** version, use the `public-beta` distribution.
+ + For the **canary** version, use the `canary` distribution.
  + You can use HTTPS if you want.
 
 ```bash
 # Stable repository
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main" | sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list
+sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com all main"
 
 # Beta repository
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main" | sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list
+sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com public-beta main"
+
+# Canary repository
+sudo tee /etc/apt/sources.list.d/javinator9889-ppa.list <<< "deb [arch=amd64 signed-by=/usr/share/keyrings/javinator9889-ppa-keyring.gpg] https://ppa.javinator9889.com canary main"
 ```
+
+> Notice that all the commands above **will overwrite the file** if they are all executed. You must choice an option suitable for your needs
+  (usually the `all` repository) and do the installation. The same applies for the commands below, as you should only use the
+  Discord version you need.
 
 Finally, update and install Discord:
 
@@ -61,6 +69,9 @@ sudo apt update && sudo apt install discord
 
 # If using public beta, install as follows:
 sudo apt install discord-ptb
+
+# If using canary, install as follows:
+sudo apt install discord-canary
 ```
 
 You can browse the repository at the following URL: https://ppa.javinator9889.com/ and the GitHub repo at: https://github.com/Javinator9889/discord-ppa
